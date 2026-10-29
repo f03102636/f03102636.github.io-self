@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: 學習筆記
+roomPage: study
+permalink: /notes/
+---
+{%- set key = "study" %}{% include "room-head.njk" %}
+
+<section class="block" aria-labelledby="shelf-title">
+  <h2 id="shelf-title" class="block-title">書架</h2>
+  <p class="block-note">一本書是一個科目，抽出來就能看那一科的計畫和筆記。</p>
+  <ul class="bookshelf">
+    {%- for s in plan.subjects %}
+    {%- set n = (collections.posts | withTag(s.tag)).length %}
+    <li class="book b{{ loop.index0 % 6 }}" style="--h:{{ [86, 100, 92, 96, 82, 100, 90, 94, 88, 98][loop.index0] }}%">
+      <a href="/learn/{{ s.slug }}/"><span class="book-name">{{ s.tag }}</span><span class="book-n">{{ n }}</span></a>
+    </li>
+    {%- endfor %}
+  </ul>
+  <div class="shelf-board" aria-hidden="true"></div>
+</section>
+
+<section class="block" aria-labelledby="desk-title">
+  <h2 id="desk-title" class="block-title">桌上的計畫</h2>
+  <ul class="desk">
+    <li><a href="/plan/"><b>一年學習計畫</b><span>四個階段、里程碑</span></a></li>
+    <li><a href="/plan/monthly/"><b>每月進度</b><span>這個月要做的事</span></a></li>
+    <li><a href="/exams/"><b>考試時程</b><span>PMP、多益、iPAS</span></a></li>
+    <li><a href="/toolbox/"><b>工具箱</b><span>會用到的軟體</span></a></li>
+  </ul>
+</section>
+
+<section class="block" aria-labelledby="notes-title">
+  <h2 id="notes-title" class="block-title">所有筆記</h2>
+  {%- set list = collections.posts | reverse %}
+  {%- if list.length %}
+  <ul class="cards">{% for post in list %}{% include "card.njk" %}{% endfor %}</ul>
+  {%- else %}<p class="empty">書桌還是空的。</p>{% endif %}
+</section>

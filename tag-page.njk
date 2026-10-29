@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+  addAllPagesToCollections: false
+eleventyComputed:
+  title: "#{{ tag.name }}"
+  description: "菜菜關於「{{ tag.name }}」的學習筆記，共 {{ tag.count }} 篇。"
+permalink: "{{ tag.name | tagUrl }}"
+---
+<article class="page">
+  <h1 class="page-title">#{{ tag.name }}</h1>
+  <p class="page-sub">共 {{ tag.count }} 篇。<a href="/tags/">看所有標籤</a></p>
+  {%- set listPosts = collections.posts | withTag(tag.name) | reverse %}
+  {% include "post-list.njk" %}
+</article>

@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: 標籤
+permalink: /tags/
+---
+<article class="page">
+  <h1 class="page-title">標籤</h1>
+  {%- if collections.tagList.length %}
+  <ul class="tag-cloud">
+    {%- for tag in collections.tagList %}
+    <li><a href="{{ tag.name | tagUrl }}"><span class="tag-cloud-name">#{{ tag.name }}</span><span class="tag-cloud-count">{{ tag.count }} 篇</span></a></li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="empty-note">還沒有任何標籤。在文章開頭的 tags 欄位加上主題，例如「日文」，這裡就會列出來。</p>
+  {%- endif %}
+</article>

@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+{%- set counts = {
+  study: collections.posts.length,
+  kitchen: collections.food.length,
+  hall: collections.travel.length,
+  balcony: collections.daily.length
+} %}
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-hi">嗨，我是{{ site.author }}</p>
+    <h1 class="hero-title">{{ site.welcome }}</h1>
+    <p class="hero-intro">{{ site.tagline }}</p>
+    <p class="hero-hint">點任何一個房間進去看看。</p>
+  </div>
+
+  <div class="scene">
+    <div class="sky" aria-hidden="true">
+      <i class="sun"></i>
+      <i class="cloud c1"></i><i class="cloud c2"></i>
+      <i class="star s1"></i><i class="star s2"></i><i class="star s3"></i><i class="star s4"></i><i class="star s5"></i>
+    </div>
+
+    <div class="house">
+      <i class="chimney" aria-hidden="true"><b></b><b></b><b></b></i>
+
+      <a class="room room-attic" href="{{ rooms.attic.url }}" data-room-link="attic">
+        {% set art = "attic" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.attic.name }}</b>{{ rooms.attic.label }}</span>
+      </a>
+
+      <a class="room room-study" href="{{ rooms.study.url }}" data-room-link="study">
+        {% set art = "study" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.study.name }}</b>{{ rooms.study.label }}</span>
+        <span class="room-count">{{ counts.study }} 篇</span>
+      </a>
+      <a class="room room-living" href="{{ rooms.living.url }}" data-room-link="living">
+        {% set art = "living" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.living.name }}</b>{{ rooms.living.label }}</span>
+      </a>
+      <a class="room room-balcony" href="{{ rooms.balcony.url }}" data-room-link="balcony">
+        {% set art = "balcony" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.balcony.name }}</b>{{ rooms.balcony.label }}</span>
+        <span class="room-count">{{ counts.balcony }} 篇</span>
+      </a>
+
+      <a class="room room-kitchen" href="{{ rooms.kitchen.url }}" data-room-link="kitchen">
+        {% set art = "kitchen" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.kitchen.name }}</b>{{ rooms.kitchen.label }}</span>
+        <span class="room-count">{{ counts.kitchen }} 篇</span>
+      </a>
+      <a class="room room-hall" href="{{ rooms.hall.url }}" data-room-link="hall">
+        {% set art = "hall" %}{% include "room-art.njk" %}
+        <span class="room-tag"><b>{{ rooms.hall.name }}</b>{{ rooms.hall.label }}</span>
+        <span class="room-count">{{ counts.hall }} 篇</span>
+      </a>
+      <div class="yard" aria-hidden="true">
+        <svg viewBox="0 0 80 80"><use href="#sprout-3"/></svg>
+        <i class="mailbox"></i>
+      </div>
+    </div>
+    <div class="ground" aria-hidden="true"></div>
+  </div>
+</section>
+
+{%- set recent = collections.entries | reverse | head(6) %}
+<section class="shelf" aria-labelledby="recent-title">
+  <div class="shelf-head">
+    <h2 id="recent-title">最近搬進來的東西</h2>
+    <p class="shelf-note" data-plan data-start="{{ plan.start }}" data-entry="{{ plan.entry }}"><span data-now hidden>學習計畫第 <b data-now-week data-plain>1</b>／49 週・離入學 <b data-now-days>0</b> 天</span></p>
+  </div>
+  {%- if recent.length %}
+  <ul class="cards">
+    {%- for post in recent %}
+    {% include "card.njk" %}
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="empty">小屋剛蓋好，還空空的。</p>
+  {%- endif %}
+</section>

@@ -1,0 +1,21 @@
+{#- 用法：{% set listPosts = ... %}{% include "post-list.njk" %} -#}
+{%- for group in listPosts | groupByYear %}
+<section class="year-group" aria-labelledby="y-{{ group.year }}">
+  <h3 class="year" id="y-{{ group.year }}">{{ group.year }}</h3>
+  <ol class="post-list">
+    {%- for post in group.posts %}
+    <li class="post-item">
+      <time class="post-item-date" datetime="{{ post.date | isoDate }}">{{ post.date | dateShort }}</time>
+      <div class="post-item-body">
+        <a class="post-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
+        {%- set ex = ("🔒 需要密碼" if post.data.locked else (post | excerpt)) %}
+        {%- if ex %}<p class="post-item-excerpt">{{ ex }}</p>{% endif %}
+        {%- if post.data.tags and post.data.tags.length %}
+        <p class="tag-row">{% for tag in post.data.tags %}<a class="tag" href="{{ tag | tagUrl }}">#{{ tag }}</a>{% endfor %}</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endfor %}

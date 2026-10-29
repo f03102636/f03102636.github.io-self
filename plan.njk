@@ -1,0 +1,117 @@
+---
+layout: layouts/base.njk
+roomPage: study
+title: 學習計畫
+description: 菜菜的一年學習路線圖：AI、電路、Omniverse、PMP、碳淨零、英文和兩篇論文，分四個階段走到研究所入學。
+permalink: /plan/
+---
+{%- set p = plan %}
+<article class="plan" data-plan data-start="{{ p.start }}" data-entry="{{ p.entry }}">
+  <header class="plan-head">
+    <h1 class="page-title">一年學習路線圖</h1>
+    <p class="page-sub">{{ p.start | ymd }} 開始，共 49 週，目標是 {{ p.entry | ymd }} 研究所入學。</p>
+    <dl class="plan-now" data-now hidden>
+      <div><dt>現在是</dt><dd><span data-now-week>W1</span><small data-now-phase></small></dd></div>
+      <div><dt>距離入學</dt><dd><span data-now-days>0</span><small>天</small></dd></div>
+      <div><dt>下一個里程碑</dt><dd class="plan-now-next" data-now-next></dd></div>
+    </dl>
+  </header>
+
+  <section class="timeline" aria-labelledby="tl-title">
+    <h2 id="tl-title">四個階段</h2>
+    <div class="tl-bar" aria-hidden="true">
+      {%- for ph in p.phases %}
+      <div class="tl-phase tl-{{ ph.id | lower }}" style="left:{{ ph.w0 | pct }}%;width:{{ (((ph.w1 - ph.w0 + 1) / 49) * 100) }}%">
+        <span>{{ ph.name }}</span>
+      </div>
+      {%- endfor %}
+      {%- for m in p.milestones %}
+      <i class="tl-dot" style="left:{{ ((m.week - 0.5) / 49 * 100) }}%" title="W{{ m.week }} {{ m.text }}"></i>
+      {%- endfor %}
+      <i class="tl-today" data-today hidden></i>
+    </div>
+    <div class="tl-scale" aria-hidden="true">
+      <span>W1</span><span>W13</span><span>W26</span><span>W39</span><span>W49</span>
+    </div>
+
+    <div class="phase-list">
+      {%- for ph in p.phases %}
+      <section class="phase tl-{{ ph.id | lower }}" data-phase-w0="{{ ph.w0 }}" data-phase-w1="{{ ph.w1 }}">
+        <h3><span class="phase-id">{{ ph.id }}</span>{{ ph.name }}</h3>
+        <p class="phase-when">W{{ ph.w0 }}–W{{ ph.w1 }}　{{ ph.start | ymd }} – {{ ph.end | md }}</p>
+        <p class="phase-goal">{{ ph.goal | join("；") }}</p>
+        <p class="phase-check-label">階段驗收</p>
+        <ul class="chips">{% for c in ph.check %}<li>{{ c }}</li>{% endfor %}</ul>
+      </section>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="ms-title">
+    <h2 id="ms-title">里程碑</h2>
+    <ol class="milestones">
+      {%- for m in p.milestones %}
+      <li data-ms-start="{{ m.start }}" data-ms-end="{{ m.end }}">
+        <span class="ms-week">W{{ m.week }}</span>
+        <span class="ms-date">{{ m.start | md }}–{{ m.end | md }}</span>
+        <span class="ms-text">{{ m.text }}</span>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <section aria-labelledby="lines-title">
+    <h2 id="lines-title">九條主線</h2>
+    <p class="section-note">優先順序：論文 A/B、PMP、多益、AI/ML、Omniverse 是不能砍的主線；電路/DSP/PCB 與碳淨零初級次之；管理課程、資管、iPAS 中級時間不夠時可延後。點開可以看細項。</p>
+    <div class="lines">
+      {%- for line in p.lines %}
+      {%- set kpi = line.kpi %}
+      <details class="line">
+        <summary>
+          <span class="line-name">{{ line.name }}</span>
+          <span class="line-weeks">{{ line.weeks }}</span>
+          <span class="line-goal">{{ line.goal }}</span>
+        </summary>
+        <div class="line-body">
+          <dl class="kv">
+            <div><dt>銜接</dt><dd>{{ line.link }}</dd></div>
+            <div><dt>重點</dt><dd>{{ line.focus }}</dd></div>
+            {%- if kpi %}
+            <div><dt>W26 檢查</dt><dd>{{ kpi.gate }}</dd></div>
+            <div><dt>年度目標</dt><dd>{{ kpi.close }}</dd></div>
+            {%- endif %}
+            <div><dt>風險</dt><dd>{{ line.risk }}</dd></div>
+            <div><dt>證據</dt><dd>{{ line.evidence }}</dd></div>
+          </dl>
+          {%- set sj = plan.subjects[loop.index0 + (1 if loop.index0 >= 8 else 0)] %}
+          <p class="section-note" style="margin:.75rem 0 0"><a href="/learn/{{ sj.slug }}/">到「{{ sj.short }}」科目頁看每月安排和筆記</a></p>
+          {%- if line.subs.length %}
+          <ol class="subs">
+            {%- for sub in line.subs %}
+            <li>
+              <p class="sub-name">{{ sub.sub }}</p>
+              <p class="sub-content">{{ sub.content }}</p>
+              <p class="sub-target">驗收：{{ sub.target }}</p>
+            </li>
+            {%- endfor %}
+          </ol>
+          {%- endif %}
+        </div>
+      </details>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="rules-title">
+    <h2 id="rules-title">落後時的取捨</h2>
+    <ol class="rules">
+      {%- for r in p.rules %}<li>{{ r }}</li>{% endfor %}
+    </ol>
+  </section>
+
+  <nav class="plan-more" aria-label="計畫相關頁面">
+    <a href="/plan/monthly/"><strong>每月進度</strong><span>12 個月、每條主線這個月要做什麼</span></a>
+    <a href="/exams/"><strong>考試時程</strong><span>PMP、iPAS、多益的目標週與備援</span></a>
+    <a href="/toolbox/"><strong>工具箱</strong><span>這一年會用到的軟體和知識</span></a>
+  </nav>
+</article>

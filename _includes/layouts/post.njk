@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+---
+{%- set r = room or "study" %}
+{%- set coll = {study: collections.posts, kitchen: collections.food, hall: collections.travel, balcony: collections.daily}[r] %}
+<article class="entry" data-room="{{ r }}">
+  <header class="entry-head">
+    <p class="entry-room"><a href="{{ rooms[r].url }}">{{ rooms[r].name }}・{{ rooms[r].label }}</a></p>
+    <h1 class="entry-title">{{ title }}</h1>
+    <p class="entry-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | dateZh }}</time>
+      {%- if place %}<span>{{ place }}</span>{% endif %}
+      {%- if days %}<span>{{ days }} 天</span>{% endif %}
+      {%- if price %}<span>{{ price }}</span>{% endif %}
+      {%- if rating %}<span class="stars" aria-label="{{ rating }} 顆星">{% for i in range(0, 5) %}<i class="{{ 'on' if i < rating }}">★</i>{% endfor %}</span>{% endif %}
+      {%- if updated %}<span>更新於 {{ updated | dateZh }}</span>{% endif %}
+      <span>約 {{ content | readingMinutes }} 分鐘</span>
+    </p>
+    {%- if tags and tags.length %}
+    <p class="tag-row">{% for tag in tags %}<a class="tag" href="{{ tag | tagUrl }}">#{{ tag }}</a>{% endfor %}</p>
+    {%- endif %}
+  </header>
+
+  {%- if cover %}
+  <figure class="entry-cover"><img src="{{ cover }}" alt=""></figure>
+  {%- endif %}
+
+  <div class="paper">
+    {%- set tocItems = content | toc %}
+    {%- if tocItems.length >= 3 %}
+    <details class="toc">
+      <summary>目錄</summary>
+      <ol>
+        {%- for item in tocItems %}
+        <li class="toc-l{{ item.level }}"><a href="#{{ item.id }}">{{ item.text }}</a></li>
+        {%- endfor %}
+      </ol>
+    </details>
+    {%- endif %}
+    <div class="prose">
+      {{ content | safe }}
+    </div>
+  </div>
+
+  {%- set prevPost = coll | getPreviousCollectionItem(page) %}
+  {%- set nextPost = coll | getNextCollectionItem(page) %}
+  {%- if prevPost or nextPost %}
+  <nav class="post-nav" aria-label="同一個房間的其他文章">
+    {%- if prevPost %}<a class="post-nav-link prev" href="{{ prevPost.url }}"><span class="post-nav-label">上一篇</span><span class="post-nav-title">{{ prevPost.data.title }}</span></a>{% endif %}
+    {%- if nextPost %}<a class="post-nav-link next" href="{{ nextPost.url }}"><span class="post-nav-label">下一篇</span><span class="post-nav-title">{{ nextPost.data.title }}</span></a>{% endif %}
+  </nav>
+  {%- endif %}
+</article>

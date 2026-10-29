@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+roomPage: study
+title: 工具箱
+description: 菜菜這一年學習會用到的軟體、工具和知識，依領域整理。
+permalink: /toolbox/
+---
+<article class="page">
+  <h1 class="page-title">工具箱</h1>
+  <p class="page-sub">這一年會用到的軟體和知識。<span class="heat heat-高">高</span>是現在業界最常用的。</p>
+
+  {%- for g in plan.tools | groupBy("area") %}
+  <section class="tool-group" aria-labelledby="tg-{{ loop.index }}">
+    <h2 id="tg-{{ loop.index }}">{{ g.key }}</h2>
+    <ul class="tools">
+      {%- for t in g.items %}
+      <li>
+        <p class="tool-name">{{ t.name }}<span class="heat heat-{{ t.heat }}">{{ t.heat }}</span></p>
+        <p class="tool-use">{{ t.use }}<span class="muted">　→ {{ t.output }}</span></p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+</article>

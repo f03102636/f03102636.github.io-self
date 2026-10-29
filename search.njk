@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: 搜尋
+permalink: /search/
+---
+<article class="page search" data-search data-base="{{ '/' | url }}">
+  <h1 class="page-title">搜尋</h1>
+  <form class="search-form" role="search" action="" method="get">
+    <label class="visually-hidden" for="q">搜尋筆記</label>
+    <input id="q" name="q" type="search" placeholder="輸入關鍵字，例如：助詞、歐姆" autocomplete="off" enterkeyhint="search">
+    <button type="submit">搜尋</button>
+  </form>
+  <p class="search-status" data-status aria-live="polite">標題、標籤和內文都會搜。</p>
+  <ol class="search-results" data-results></ol>
+  <noscript><p class="empty-note">搜尋需要開啟 JavaScript。也可以從<a href="/tags/">標籤</a>找文章。</p></noscript>
+</article>
+<script src="/assets/js/search.js" defer></script>

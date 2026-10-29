@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: 日常
+roomPage: balcony
+permalink: /daily/
+---
+{%- set key = "balcony" %}{% include "room-head.njk" %}
+{%- set list = collections.daily | reverse %}
+<section class="block">
+  {%- if list.length %}
+  <ul class="cards">{% for post in list %}{% include "card.njk" %}{% endfor %}</ul>
+  {%- else %}
+  <div class="empty-room">
+    <p class="empty-big">陽台的花剛種下。</p>
+    <p>在 GitHub 的 <code>daily</code> 資料夾新增一篇 .md，就會出現在這裡。</p>
+  </div>
+  {%- endif %}
+</section>

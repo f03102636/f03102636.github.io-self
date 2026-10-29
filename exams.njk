@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+roomPage: study
+title: 考試時程
+description: 菜菜這一年要考的證照：PMP、iPAS 淨零碳規劃管理師、多益，目標週與備援計畫。
+permalink: /exams/
+---
+<article class="plan" data-plan data-start="{{ plan.start }}" data-entry="{{ plan.entry }}">
+  <h1 class="page-title">考試時程</h1>
+  <p class="page-sub">下面是我自己訂的目標週，不是官方考期。實際日期、資格和費用都以各主辦單位公告為準。</p>
+
+  <ol class="exams">
+    {%- for e in plan.exams %}
+    <li class="exam" {% if e.start %}data-ms-start="{{ e.start }}" data-ms-end="{{ e.end }}"{% endif %}>
+      <div class="exam-when">
+        {%- if e.start %}
+        <span class="exam-week">W{{ e.week }}</span>
+        <span class="exam-date">{{ e.start | ymd }}<br>– {{ e.end | md }}</span>
+        {%- else %}
+        <span class="exam-week is-opt">{{ "備援" if "備援" in e.name else "選修" }}</span>
+        {%- endif %}
+      </div>
+      <div class="exam-body">
+        <h2 class="exam-name">{{ e.name }}</h2>
+        <p class="exam-kind">{{ e.kind }}</p>
+        <dl class="kv">
+          <div><dt>資格</dt><dd>{{ e.req }}</dd></div>
+          <div><dt>準備</dt><dd>{{ e.prep }}{% if e.apply and e.apply != "—" %}；{{ e.apply }}{% endif %}</dd></div>
+          {%- if e.backup and e.backup != "—" %}<div><dt>備援</dt><dd>{{ e.backup }}</dd></div>{% endif %}
+          {%- if e.note %}<div><dt>備註</dt><dd>{{ e.note }}</dd></div>{% endif %}
+        </dl>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+
+  <section aria-labelledby="pmp-title">
+    <h2 id="pmp-title">PMP 準備節奏</h2>
+    <ol class="rules">
+      {%- for s in plan.pmpSteps %}<li>{{ s }}</li>{% endfor %}
+    </ol>
+  </section>
+
+  <section aria-labelledby="mg-title">
+    <h2 id="mg-title">管理課程清單</h2>
+    <p class="section-note">標「可延後」的課是緩衝，時間不夠先砍這些。</p>
+    <div class="table-wrap">
+      <table class="course-table">
+        <thead><tr><th>週次</th><th>課程</th><th>產出</th><th>時數</th></tr></thead>
+        <tbody>
+          {%- for c in plan.courses %}
+          <tr>
+            <td class="nowrap">{{ c.weeks }}</td>
+            <td><strong>{{ c.name }}</strong>{% if c.defer %}<span class="badge">可延後</span>{% endif %}<br><span class="muted">{{ c.content }}</span></td>
+            <td>{{ c.output }}</td>
+            <td class="num">{{ c.hours }}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</article>

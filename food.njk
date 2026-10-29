@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: 食記
+roomPage: kitchen
+permalink: /food/
+---
+{%- set key = "kitchen" %}{% include "room-head.njk" %}
+{%- set list = collections.food | reverse %}
+<section class="block">
+  {%- if list.length %}
+  <ul class="polaroids">
+    {%- for post in list %}
+    {%- set d = post.data %}
+    <li class="polaroid" style="--tilt:{{ [-2.2, 1.6, -1, 2.4, -1.8, 1][loop.index0 % 6] }}deg">
+      <a href="{{ post.url }}">
+        <span class="polaroid-photo">
+          {%- if d.cover and not d.locked %}<img src="{{ d.cover }}" alt="" loading="lazy">{% else %}<span class="plate" aria-hidden="true"></span>{% endif %}
+          {%- if d.locked %}<span class="card-lock" aria-label="需要密碼"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>{% endif %}
+        </span>
+        <span class="polaroid-title">{{ d.title }}</span>
+        <span class="polaroid-meta">
+          {%- if d.rating %}<span class="stars" aria-label="{{ d.rating }} 顆星">{% for i in range(0, 5) %}<i class="{{ 'on' if i < d.rating }}">★</i>{% endfor %}</span>{% endif %}
+          <span>{{ d.place or (post.date | dateDot) }}</span>
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <div class="empty-room">
+    <p class="empty-big">廚房還沒開伙。</p>
+    <p>在 GitHub 的 <code>food</code> 資料夾新增一篇 .md，用 <code>templates/食記範本.md</code> 開頭，這裡就會出現一張拍立得。</p>
+  </div>
+  {%- endif %}
+</section>

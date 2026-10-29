@@ -1,0 +1,30 @@
+{#- 一張文章卡片：需要變數 post -#}
+{%- set r = post.data.room or "study" %}
+{%- set d = post.data %}
+<li class="card" data-room="{{ r }}">
+  <a class="card-link" href="{{ post.url }}">
+    <span class="card-cover">
+      {%- if d.cover and not d.locked %}
+      <img src="{{ d.cover }}" alt="" loading="lazy">
+      {%- else %}
+      {% set art = r if r != "study" else "study" %}{% include "room-art.njk" %}
+      {%- endif %}
+      <span class="card-room">{{ rooms[r].label }}</span>
+      {%- if d.locked %}<span class="card-lock" aria-label="需要密碼"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>{% endif %}
+    </span>
+    <span class="card-body">
+      <span class="card-title">{{ d.title }}</span>
+      <span class="card-meta">
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | dateDot }}</time>
+        {%- if d.place %}<span>{{ d.place }}</span>{% endif %}
+        {%- if d.rating %}<span class="stars" aria-label="{{ d.rating }} 顆星">{% for i in range(0, 5) %}<i class="{{ 'on' if i < d.rating }}">★</i>{% endfor %}</span>{% endif %}
+      </span>
+      {%- if not d.locked %}
+      {%- set ex = post | excerpt %}
+      {%- if ex %}<span class="card-excerpt">{{ ex }}</span>{% endif %}
+      {%- else %}
+      <span class="card-excerpt is-locked">這篇上了鎖，輸入密碼才能看。</span>
+      {%- endif %}
+    </span>
+  </a>
+</li>

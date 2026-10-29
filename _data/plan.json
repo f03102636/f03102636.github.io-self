@@ -1,0 +1,3918 @@
+{
+ "start": "2026-09-28",
+ "entry": "2027-09-01",
+ "title": "一年學習 Roadmap｜AI＋電機＋Omniverse/Real-to-Sim＋PMP＋碳淨零＋管理＋兩篇論文｜2026/09/28 → 2027/09 入學",
+ "basis": "管理基準:P0=論文A/B、PMP、多益、AI/ML、Omniverse 主線;P1=電路/DSP/PCB、碳淨零(初級);P2=管理課程、資管、iPAS 中級(可延後)。每週日 19:00 週回顧;每 13 週(W13/W26/W39/W49)做 Gate;完成率採項次計數制,只算有 Evidence 的完成。每週 40 小時,為高強度計畫,落後時依『管理課程清單』可延後順序處理。",
+ "lines": [
+  {
+   "name": "AI/ML 與數學",
+   "goal": "ML 小專案→DL 專題→端到端 AI 服務→作品集",
+   "link": "研究所預修(ML/DL/最佳化)",
+   "weeks": "W1–W49",
+   "hours": "8/7/6/4",
+   "risk": "時間被擠壓",
+   "focus": "做專案,不只看課",
+   "evidence": "Repo/Demo",
+   "ids": "AI-01~22",
+   "subs": [
+    {
+     "line": "AI/ML 與數學",
+     "sub": "AI-1 數學與 Python 基礎",
+     "content": "環境、Python/NumPy/Pandas、線代/機率/微積分複習",
+     "resource": "線上課程/教材",
+     "evidence": "筆記+Notebook",
+     "target": "習題≥80%;GitHub 每週 commit"
+    },
+    {
+     "line": "AI/ML 與數學",
+     "sub": "AI-2 ML 基礎",
+     "content": "迴歸/分類/評估/sklearn/Kaggle/手刻神經網路",
+     "resource": "吳恩達/李宏毅課程",
+     "evidence": "GitHub repo",
+     "target": "ML 小專案 1 件"
+    },
+    {
+     "line": "AI/ML 與數學",
+     "sub": "AI-3 深度學習與 LLM",
+     "content": "PyTorch/CNN/YOLO/Transformer/RAG/最佳化",
+     "resource": "CS231n/Hugging Face 課程",
+     "evidence": "專題報告+Demo",
+     "target": "DL 專題 1 件"
+    },
+    {
+     "line": "AI/ML 與數學",
+     "sub": "AI-4 部署/MLOps/RL",
+     "content": "MLflow/Docker/FastAPI/ONNX/強化學習/邊緣 AI",
+     "resource": "官方文件",
+     "evidence": "API+Docker+雲端 Demo",
+     "target": "端到端 AI 服務 1 套"
+    },
+    {
+     "line": "AI/ML 與數學",
+     "sub": "AI-5 研究所預修與作品集",
+     "content": "ML/DL 預修複習、論文精讀、作品集、面試題",
+     "resource": "LeetCode/論文",
+     "evidence": "作品集網站",
+     "target": "作品集 3 件;面試題≥100 題"
+    }
+   ],
+   "kpi": {
+    "name": "AI/ML 與數學",
+    "weight": 0.14,
+    "gate": "ML 小專案+DL 專題完成",
+    "close": "端到端 AI 服務+作品集;研究所預修複習完成",
+    "evidence": "Repo/Demo"
+   }
+  },
+  {
+   "name": "電路/DSP/PCB",
+   "goal": "LTspice→DSP 報告→PCB v1→v2",
+   "link": "研究所預修(電路/DSP)",
+   "weeks": "W1–W46",
+   "hours": "6/7/6/3",
+   "risk": "打樣週期",
+   "focus": "每階段 1 件可驗收作品",
+   "evidence": "Gerber/報告",
+   "ids": "EE-01~23",
+   "subs": [
+    {
+     "line": "電路/DSP/PCB",
+     "sub": "EE-1 電路基礎",
+     "content": "直流/暫態/相量/二極體/BJT/MOSFET/Op-Amp/訊號與系統",
+     "resource": "Sedra-Smith/Razavi",
+     "evidence": "模擬檔+報告",
+     "target": "LTspice 3 個電路報告"
+    },
+    {
+     "line": "電路/DSP/PCB",
+     "sub": "EE-2 DSP",
+     "content": "取樣/FFT/Z 轉換/FIR/IIR/STFT",
+     "resource": "Oppenheim/Smith DSP 書",
+     "evidence": "Notebook/報告",
+     "target": "FIR/IIR 設計各 1;DSP 報告"
+    },
+    {
+     "line": "電路/DSP/PCB",
+     "sub": "EE-3 KiCad PCB",
+     "content": "LED 板→類比前端板,完整 ERC/DRC/Gerber 流程",
+     "resource": "KiCad 官方教學",
+     "evidence": "KiCad 專案+Gerber",
+     "target": "PCB v1 Gerber"
+    },
+    {
+     "line": "電路/DSP/PCB",
+     "sub": "EE-4 進階 PCB/嵌入式",
+     "content": "4 層板/SI/PI/EMC/STM32 layout/DFM/嵌入式 DSP",
+     "resource": "Altium/KiCad",
+     "evidence": "設計報告;ERC/DRC 0 錯",
+     "target": "PCB v2+設計文件"
+    },
+    {
+     "line": "電路/DSP/PCB",
+     "sub": "EE-5 研究所預修",
+     "content": "電路/DSP 總複習、PCB 作品整理、DSP+AI 整合",
+     "resource": "教材習題",
+     "evidence": "習題檔+作品 PDF",
+     "target": "習題≥80%"
+    }
+   ],
+   "kpi": {
+    "name": "電路/DSP/PCB",
+    "weight": 0.12,
+    "gate": "LTspice+DSP 報告+PCB v1 Gerber",
+    "close": "PCB v2+電路/DSP 預修習題≥80%",
+    "evidence": "Gerber/報告"
+   }
+  },
+  {
+   "name": "Omniverse/Real-to-Sim",
+   "goal": "小場景→合成資料 pipeline→數位孿生展示",
+   "link": "與本職 Real-to-Sim 工作相互驗證",
+   "weeks": "W1–W48",
+   "hours": "4/3/4/2",
+   "risk": "授權/版本/資料權限",
+   "focus": "把 3D 展示升級成資料驅動 Twin",
+   "evidence": "Scene/Demo",
+   "ids": "OM-01~22",
+   "subs": [
+    {
+     "line": "Omniverse/Real-to-Sim",
+     "sub": "OM-1 USD/Omniverse 基礎",
+     "content": "安裝、USD、材質燈光、腳本、PhysX、OmniGraph、小場景",
+     "resource": "NVIDIA 官方文件",
+     "evidence": "Scene+Demo 影片",
+     "target": "數位孿生小場景 1 個"
+    },
+    {
+     "line": "Omniverse/Real-to-Sim",
+     "sub": "OM-2 Isaac Sim 與合成資料",
+     "content": "Isaac Sim、感測器、Replicator、ROS 2、Isaac Lab、CAD/SimReady",
+     "resource": "NVIDIA 官方文件/DLI",
+     "evidence": "Pipeline+報告",
+     "target": "合成資料→訓練→回測 pipeline"
+    },
+    {
+     "line": "Omniverse/Real-to-Sim",
+     "sub": "OM-3 Real-to-Sim 與數位孿生應用",
+     "content": "RL/Sim-to-Real、資料串接、Kit App、Physical AI、展示專案",
+     "resource": "官方文件/論文",
+     "evidence": "Demo+文件",
+     "target": "作品集 2 個 Demo"
+    },
+    {
+     "line": "Omniverse/Real-to-Sim",
+     "sub": "OM-4 作品優化",
+     "content": "作品優化、DLI、論文B 模擬驗證、社群分享",
+     "resource": "DLI",
+     "evidence": "影片+部落格",
+     "target": "作品集影片"
+    }
+   ],
+   "kpi": {
+    "name": "Omniverse/Real-to-Sim",
+    "weight": 0.12,
+    "gate": "合成資料→訓練→回測 pipeline",
+    "close": "Omniverse 作品集 2 Demo+Real-to-Sim 展示",
+    "evidence": "Scene/Demo"
+   }
+  },
+  {
+   "name": "PMP 專案管理",
+   "goal": "資格→35 小時課程→申請→模考→正式考試",
+   "link": "PMP(新版 2026 ECO),目標 W31",
+   "weeks": "W1–W41",
+   "hours": "(併入 PMP/管理 5/7/7/6)",
+   "risk": "資格/審核/新版題型",
+   "focus": "先確認資格;模考≥75% 再預約",
+   "evidence": "培訓證明/成績單",
+   "ids": "PM-01~17",
+   "subs": [
+    {
+     "line": "PMP 專案管理",
+     "sub": "PM-1 資格與申請準備",
+     "content": "確認資格、PMI 帳號、2026 ECO、PM/敏捷先修、經歷草稿",
+     "resource": "PMI 官網",
+     "evidence": "資格清單+草稿",
+     "target": "資格確認+經歷草稿完成"
+    },
+    {
+     "line": "PMP 專案管理",
+     "sub": "PM-2 PMP 35 小時課程",
+     "content": "人員/流程/商業環境三大領域正式課程",
+     "resource": "PMI 認可培訓機構",
+     "evidence": "培訓證明+筆記",
+     "target": "35 小時培訓證明"
+    },
+    {
+     "line": "PMP 專案管理",
+     "sub": "PM-3 PMP 申請與題庫模擬",
+     "content": "送出申請、章節題庫、敏捷混合補強、模擬考、預約",
+     "resource": "題庫/模擬器",
+     "evidence": "模考成績表",
+     "target": "模擬考穩定≥75%"
+    },
+    {
+     "line": "PMP 專案管理",
+     "sub": "PM-4 PMP 考試與維持",
+     "content": "正式考試、備援考試窗、PDU 維持",
+     "resource": "Pearson VUE/PMI",
+     "evidence": "成績單/證書",
+     "target": "PMP 通過"
+    }
+   ],
+   "kpi": {
+    "name": "PMP 專案管理",
+    "weight": 0.15,
+    "gate": "35 小時培訓完成;PMP 申請送出",
+    "close": "PMP 通過(W31;備援 W38-40)+PDU 維持計畫",
+    "evidence": "培訓證明/成績單"
+   }
+  },
+  {
+   "name": "管理課程",
+   "goal": "12 個管理主題與整合案例",
+   "link": "PMP 商業環境/人員領域補強",
+   "weeks": "W4–W48",
+   "hours": "(同上)",
+   "risk": "課量大",
+   "focus": "可延後項為緩衝",
+   "evidence": "筆記/案例",
+   "ids": "MG-01~12",
+   "subs": [
+    {
+     "line": "管理課程",
+     "sub": "MG-1 管理基礎",
+     "content": "管理學概論、組織行為、財務報表與管理會計",
+     "resource": "開放課程/Coursera/edX",
+     "evidence": "課程證明/筆記",
+     "target": "2 門課筆記+作業"
+    },
+    {
+     "line": "管理課程",
+     "sub": "MG-2 領導與營運",
+     "content": "領導力、精實管理/六標準差、策略與績效(BSC/OKR)",
+     "resource": "開放課程/Coursera/edX",
+     "evidence": "課程證明/案例",
+     "target": "3 門課筆記+案例"
+    },
+    {
+     "line": "管理課程",
+     "sub": "MG-3 進階管理",
+     "content": "供應鏈營運、風險管理、談判溝通、技術商品化/科專管理",
+     "resource": "開放課程/企管課程",
+     "evidence": "課程證明/案例",
+     "target": "4 門課筆記+案例"
+    },
+    {
+     "line": "管理課程",
+     "sub": "MG-4 應用與職涯",
+     "content": "變革/ESG 管理、整合案例報告、職涯規劃",
+     "resource": "自學",
+     "evidence": "案例報告",
+     "target": "案例報告 1 份"
+    }
+   ],
+   "kpi": {
+    "name": "管理課程",
+    "weight": 0.06,
+    "gate": "管理基礎+領導營運課程(可延後項除外)",
+    "close": "整合案例報告完成;可延後項依進度取捨",
+    "evidence": "案例報告"
+   }
+  },
+  {
+   "name": "碳淨零",
+   "goal": "淨零基礎→碳盤查→iPAS 初級→ISO 14064-1→中級",
+   "link": "iPAS 初級 W33;中級 W48(可順延)",
+   "weeks": "W3–W48",
+   "hours": "2/3/4/3",
+   "risk": "梯次日期未公告",
+   "focus": "官網為準;中級可入學後再考",
+   "evidence": "成績單/結業證明",
+   "ids": "CN-01~13",
+   "subs": [
+    {
+     "line": "碳淨零",
+     "sub": "CN-1 淨零基礎",
+     "content": "氣候變遷、2050 路徑、碳費/CBAM、GHG Protocol",
+     "resource": "官方公開資料",
+     "evidence": "筆記",
+     "target": "基礎筆記+備考計畫"
+    },
+    {
+     "line": "碳淨零",
+     "sub": "CN-2 碳盤查實作",
+     "content": "範疇 1/2/3、排放係數、Excel 盤查、初級題庫",
+     "resource": "環境部/GHG Protocol",
+     "evidence": "盤查檔+題庫成績",
+     "target": "Excel 盤查 1 份"
+    },
+    {
+     "line": "碳淨零",
+     "sub": "CN-3 iPAS 初級",
+     "content": "題庫、報名、初級考試",
+     "resource": "iPAS 官網",
+     "evidence": "成績單",
+     "target": "iPAS 初級通過"
+    },
+    {
+     "line": "碳淨零",
+     "sub": "CN-4 查證與中級",
+     "content": "ISO 14064-1 研習、中級備考(含計算題)、中級考試",
+     "resource": "開班機構/iPAS 官網",
+     "evidence": "結業證明/成績單",
+     "target": "研習結業+中級應考"
+    }
+   ],
+   "kpi": {
+    "name": "碳淨零",
+    "weight": 0.1,
+    "gate": "碳盤查 Excel+初級題庫第 1 輪",
+    "close": "iPAS 初級通過;ISO 14064-1 研習;中級視進度",
+    "evidence": "成績單/結業證明"
+   }
+  },
+  {
+   "name": "資管/資料/雲端",
+   "goal": "SQL/BI→自動化→AI+資管提案書",
+   "link": "職場應用",
+   "weeks": "W1–W39",
+   "hours": "(併入 PMP/管理)",
+   "risk": "與 PMP 重疊",
+   "focus": "只留與 AI/管理相關的部分",
+   "evidence": "小案/提案書",
+   "ids": "IS-01~12",
+   "subs": [
+    {
+     "line": "資管/資料/雲端",
+     "sub": "IS-1 資料庫與 BI",
+     "content": "SQL、Excel/Power BI、UML、Scrum、需求→BI 小案",
+     "resource": "線上課程",
+     "evidence": "小案報告",
+     "target": "小案 1 件"
+    },
+    {
+     "line": "資管/資料/雲端",
+     "sub": "IS-2 企業系統與雲端",
+     "content": "MIS/ERP/ETL、Python 自動化、RPA、AWS 基礎",
+     "resource": "線上課程",
+     "evidence": "專案報告",
+     "target": "自動化報表專案 1 件"
+    },
+    {
+     "line": "資管/資料/雲端",
+     "sub": "IS-3 AI 導入與提案",
+     "content": "AI 專案/ROI、SQL 進階、系統架構、提案書",
+     "resource": "案例研究",
+     "evidence": "提案書+簡報",
+     "target": "AI+資管提案書"
+    }
+   ],
+   "kpi": {
+    "name": "資管/資料/雲端",
+    "weight": 0.05,
+    "gate": "SQL/BI 小案+自動化報表專案",
+    "close": "AI+資管提案書與簡報",
+    "evidence": "提案書"
+   }
+  },
+  {
+   "name": "英文",
+   "goal": "多益 700→800→880→實考 900,口說 15 分鐘",
+   "link": "多益 W43(7 月)",
+   "weeks": "W1–W49",
+   "hours": "9/5/5/10",
+   "risk": "口說量不足",
+   "focus": "每日聽力+每週 2 次口說",
+   "evidence": "成績單/錄音",
+   "ids": "EN-01~17",
+   "subs": [
+    {
+     "line": "英文(多益900+口說)",
+     "sub": "EN-1 多益基礎",
+     "content": "基準模測、聽力/文法/閱讀、口說起步",
+     "resource": "ETS 官方題本",
+     "evidence": "成績紀錄",
+     "target": "全真模測≥700"
+    },
+    {
+     "line": "英文(多益900+口說)",
+     "sub": "EN-2 多益進階",
+     "content": "閱讀速度、聽力進階、學術單字、技術簡報",
+     "resource": "官方題本",
+     "evidence": "成績紀錄",
+     "target": "全真模測≥800"
+    },
+    {
+     "line": "英文(多益900+口說)",
+     "sub": "EN-3 多益精練",
+     "content": "技術英文、模擬面試口說、弱項、雙模測",
+     "resource": "官方題本",
+     "evidence": "成績紀錄",
+     "target": "全真模測≥880"
+    },
+    {
+     "line": "英文(多益900+口說)",
+     "sub": "EN-4 實考與口說",
+     "content": "模測衝刺、7 月實考、補考規劃、學術/面試英文",
+     "resource": "TOEIC 官網",
+     "evidence": "成績單+錄音",
+     "target": "多益≥900;自由對話 15 分鐘"
+    }
+   ],
+   "kpi": {
+    "name": "英文(多益900+口說)",
+    "weight": 0.12,
+    "gate": "多益模測≥800",
+    "close": "多益≥900+自由對話 15 分鐘",
+    "evidence": "成績單/錄音"
+   }
+  },
+  {
+   "name": "論文 A/B",
+   "goal": "A:W1–W26;B:W23–W48(各 6 個月)",
+   "link": "投稿或 arXiv",
+   "weeks": "W1–W48",
+   "hours": "6/8/8/12",
+   "risk": "指導者方向未定",
+   "focus": "先定題再做實驗",
+   "evidence": "全文/投稿證明",
+   "ids": "TH-01~24",
+   "subs": [
+    {
+     "line": "論文 A/B",
+     "sub": "TH-1 論文A 前期",
+     "content": "選題、文獻、研究問題、baseline、方法 v1",
+     "resource": "指導者",
+     "evidence": "文獻矩陣+baseline 結果",
+     "target": "初步實驗完成"
+    },
+    {
+     "line": "論文 A/B",
+     "sub": "TH-2 論文A 實驗與寫作",
+     "content": "實驗/消融/SOTA、圖表、撰寫、潤稿、投稿",
+     "resource": "指導者",
+     "evidence": "全文+投稿證明",
+     "target": "論文A 投稿或 arXiv"
+    },
+    {
+     "line": "論文 A/B",
+     "sub": "TH-3 論文B 前期與實驗",
+     "content": "選題、文獻、baseline、方法、實驗、初稿",
+     "resource": "指導者",
+     "evidence": "初稿+實驗結果",
+     "target": "論文B 初稿"
+    },
+    {
+     "line": "論文 A/B",
+     "sub": "TH-4 論文B 收尾",
+     "content": "審閱、補實驗、修訂、投稿、開源、定稿",
+     "resource": "指導者",
+     "evidence": "全文+投稿證明",
+     "target": "論文B 定稿"
+    }
+   ],
+   "kpi": {
+    "name": "論文 A/B",
+    "weight": 0.14,
+    "gate": "論文A 投稿或 arXiv",
+    "close": "論文B 定稿+研究計畫",
+    "evidence": "全文/投稿證明"
+   }
+  }
+ ],
+ "rules": [
+  "不能砍:論文 A/B、PMP、多益、Python/ML/DL、電路+DSP 基礎、Omniverse 主線。",
+  "砍項順位 1(Master List 備註標『可延後』):管理課程 MG-02/03/04/05/06/08/09、IS-10/11、AWS(IS-07)、iPAS 中級(CN-11~13)。",
+  "砍項順位 2:EE-18 FPGA、EE-19 通訊/LMS、Isaac 進階工作。",
+  "若連續 2 週「本週實際完成」低於「本週應完成」的 60%,先動用砍項順位 1。",
+  "PMP 資格若不足(W2 評估),整個 PM 主線改走 CAPM 或延到累積足夠專案月數後再考。"
+ ],
+ "phases": [
+  {
+   "id": "P1",
+   "name": "打底期",
+   "w0": 1,
+   "w1": 13,
+   "start": "2026-09-28",
+   "end": "2026-12-27",
+   "goal": [
+    "數學/Python/電路基礎",
+    "ML 入門",
+    "Omniverse/USD",
+    "PMP 先修與經歷草稿",
+    "淨零基礎",
+    "多益 700",
+    "論文A 到初步實驗"
+   ],
+   "check": [
+    "ML 小專案",
+    "LTspice 報告",
+    "Omniverse 小場景",
+    "PMP 經歷草稿",
+    "多益≥700"
+   ]
+  },
+  {
+   "id": "P2",
+   "name": "進階期",
+   "w0": 14,
+   "w1": 26,
+   "start": "2026-12-28",
+   "end": "2027-03-28",
+   "goal": [
+    "DL/Transformer/RAG",
+    "DSP+KiCad",
+    "Isaac Sim",
+    "PMP 35 小時課程與申請",
+    "碳盤查與 iPAS 初級備考",
+    "多益 800",
+    "論文A 投稿"
+   ],
+   "check": [
+    "DL 專題",
+    "PCB v1",
+    "合成資料 pipeline",
+    "PMP 培訓證明",
+    "多益≥800",
+    "論文A"
+   ]
+  },
+  {
+   "id": "P3",
+   "name": "實戰期",
+   "w0": 27,
+   "w1": 39,
+   "start": "2027-03-29",
+   "end": "2027-06-27",
+   "goal": [
+    "MLOps/RL",
+    "高速 PCB/嵌入式",
+    "Real-to-Sim",
+    "PMP 模考與考試",
+    "iPAS 初級考試",
+    "ISO 14064-1 研習",
+    "多益 880",
+    "論文B 實驗寫作"
+   ],
+   "check": [
+    "PMP 通過",
+    "iPAS 初級",
+    "端到端 AI 服務",
+    "PCB v2",
+    "多益≥880",
+    "論文B 初稿"
+   ]
+  },
+  {
+   "id": "P4",
+   "name": "衝刺期",
+   "w0": 40,
+   "w1": 49,
+   "start": "2027-06-28",
+   "end": "2027-09-05",
+   "goal": [
+    "研究所預修",
+    "多益 7 月實考",
+    "iPAS 中級",
+    "作品集/履歷",
+    "論文B 修訂投稿",
+    "入學準備"
+   ],
+   "check": [
+    "多益≥900",
+    "論文B 定稿",
+    "作品集+履歷",
+    "入學準備清單"
+   ]
+  }
+ ],
+ "milestones": [
+  {
+   "week": 1,
+   "start": "2026-09-28",
+   "end": "2026-10-04",
+   "text": "啟動:環境建置、多益基準模測、PMP 資格確認、論文領域確認"
+  },
+  {
+   "week": 13,
+   "start": "2026-12-21",
+   "end": "2026-12-27",
+   "text": "P1 Gate:ML 小專案、LTspice 報告、Omniverse 小場景、資管小案、多益≥700"
+  },
+  {
+   "week": 22,
+   "start": "2027-02-22",
+   "end": "2027-02-28",
+   "text": "PMP 35 小時課程完成並取得證明"
+  },
+  {
+   "week": 24,
+   "start": "2027-03-08",
+   "end": "2027-03-14",
+   "text": "PMP 申請送出;論文A 全文初稿"
+  },
+  {
+   "week": 26,
+   "start": "2027-03-22",
+   "end": "2027-03-28",
+   "text": "P2 Gate:論文A 投稿、DL 專題、PCB v1、多益≥800;決策點:依當年課表定案 AI/電機比重"
+  },
+  {
+   "week": 31,
+   "start": "2027-04-26",
+   "end": "2027-05-02",
+   "text": "PMP 正式考試(目標週)"
+  },
+  {
+   "week": 33,
+   "start": "2027-05-10",
+   "end": "2027-05-16",
+   "text": "iPAS 淨零碳規劃管理師初級(目標週,依官網)"
+  },
+  {
+   "week": 39,
+   "start": "2027-06-21",
+   "end": "2027-06-27",
+   "text": "P3 Gate:端到端 AI 服務、PCB v2、Omniverse 作品集、提案書、多益≥880"
+  },
+  {
+   "week": 43,
+   "start": "2027-07-19",
+   "end": "2027-07-25",
+   "text": "多益實考(7 月場次,依官網)"
+  },
+  {
+   "week": 48,
+   "start": "2027-08-23",
+   "end": "2027-08-29",
+   "text": "論文B 定稿;iPAS 中級(可順延)"
+  },
+  {
+   "week": 49,
+   "start": "2027-08-30",
+   "end": "2027-09-05",
+   "text": "入學準備清單完成"
+  }
+ ],
+ "examNote": "以下日期為『目標週』,不是官方考期。2026/07/09 起 PMP 已改為新版(2026 ECO),請依新版備考;iPAS 2026 梯次(初級 5/16、8/15、11/7;中級 4/11、8/22)僅供推算,2027 梯次與報名截止日一律以官網公告為準。費用、資格細節亦以官方為準。",
+ "exams": [
+  {
+   "name": "PMP(專案管理專業人員)",
+   "kind": "PMI 國際證照",
+   "req": "學士+36 個月專案領導經驗+35 小時培訓(無學士為 60 個月);細節以 PMI 官網為準",
+   "prep": "W1–W31",
+   "apply": "申請 W23–W24;預約 W28",
+   "week": "31",
+   "start": "2027-04-26",
+   "end": "2027-05-02",
+   "backup": "W38–W40 備援考試窗",
+   "ids": "PM-01~PM-17",
+   "note": "若經驗月數不足,W2 前決定改走 CAPM(23 小時培訓,無經驗門檻,以官網為準)並調整 PM 任務"
+  },
+  {
+   "name": "CAPM(備援)",
+   "kind": "PMI 入門證照",
+   "req": "僅在 PMP 資格不足時採用",
+   "prep": "W3–W20",
+   "apply": "視 W2 資格評估",
+   "week": "—",
+   "start": "",
+   "end": "",
+   "backup": "—",
+   "ids": "PM-01",
+   "note": "非預設路徑"
+  },
+  {
+   "name": "iPAS 淨零碳規劃管理師(初級)",
+   "kind": "經濟部 iPAS",
+   "req": "資格與費用以官網為準",
+   "prep": "W3–W33",
+   "apply": "報名 W28",
+   "week": "33",
+   "start": "2027-05-10",
+   "end": "2027-05-16",
+   "backup": "下一梯次(預估 8 月,W46 附近)",
+   "ids": "CN-01~CN-09",
+   "note": "2026 初級為 5/16、8/15、11/7(供參考)"
+  },
+  {
+   "name": "ISO 14064-1 溫室氣體盤查研習(內部/主任查證員訓練)",
+   "kind": "民間/學校機構開班",
+   "req": "1~3 天,依開班公告",
+   "prep": "W35–W37",
+   "apply": "依開班公告",
+   "week": "36",
+   "start": "2027-05-31",
+   "end": "2027-06-06",
+   "backup": "—",
+   "ids": "CN-10",
+   "note": "例:學校曾開含 ISO 14064-1 查證員訓練+iPAS 實務之研習班;2027 開班需另查"
+  },
+  {
+   "name": "iPAS 淨零碳規劃管理師(中級)",
+   "kind": "經濟部 iPAS",
+   "req": "建議初級通過後再考;資格以官網為準",
+   "prep": "W36–W48",
+   "apply": "報名 W40",
+   "week": "48",
+   "start": "2027-08-23",
+   "end": "2027-08-29",
+   "backup": "可順延至入學後",
+   "ids": "CN-11~CN-13",
+   "note": "2026 中級為 4/11、8/22(供參考);計算題偏多"
+  },
+  {
+   "name": "多益 TOEIC(目標≥900)",
+   "kind": "ETS",
+   "req": "無",
+   "prep": "W1–W43",
+   "apply": "報名 W39",
+   "week": "43",
+   "start": "2027-07-19",
+   "end": "2027-07-25",
+   "backup": "W47 補考",
+   "ids": "EN-01~EN-17",
+   "note": "考期以官網為準"
+  },
+  {
+   "name": "AWS Cloud Practitioner/AI Practitioner(選修)",
+   "kind": "AWS",
+   "req": "無",
+   "prep": "W23–W25",
+   "apply": "—",
+   "week": "—",
+   "start": "",
+   "end": "",
+   "backup": "時間不足則刪除",
+   "ids": "IS-07",
+   "note": "選修,不計入核心里程碑"
+  }
+ ],
+ "pmpSteps": [
+  "W1–W2:確認資格、盤點專案經歷,決定走 PMP 或 CAPM。",
+  "W3–W13:讀 ECO、PMBOK 8 導覽、專案管理與敏捷先修;W10–W12 寫經歷草稿。",
+  "W14–W22:35 小時正式課程(人員/流程/商業環境),取得培訓證明。",
+  "W23–W24:送出申請並等待審核(可能被抽查,預留時間);同步題庫。",
+  "W27–W30:完整模擬考 ×4,穩定≥75%(本計畫自訂門檻)再預約。",
+  "W31:正式考試;未通過則 W38–W40 備援窗重考。新版強調敏捷/混合、商業策略與治理、AI 與永續,情境題比例提高。"
+ ],
+ "courses": [
+  {
+   "no": 1,
+   "name": "管理學概論+組織行為",
+   "id": "MG-01",
+   "weeks": "W4–W7",
+   "content": "計畫/組織/領導/控制;個人與團隊行為",
+   "hours": 15,
+   "output": "課程筆記+作業",
+   "relation": "PMP 人員領域基礎",
+   "defer": false
+  },
+  {
+   "no": 2,
+   "name": "財務報表與管理會計",
+   "id": "MG-02",
+   "weeks": "W8–W13",
+   "content": "三大報表、成本分析、預算、損益平衡(Excel)",
+   "hours": 15,
+   "output": "成本分析 Excel",
+   "relation": "專案成本管理",
+   "defer": true
+  },
+  {
+   "no": 3,
+   "name": "領導力與團隊管理",
+   "id": "MG-03",
+   "weeks": "W14–W17",
+   "content": "領導風格、激勵、衝突、教練",
+   "hours": 12,
+   "output": "案例心得",
+   "relation": "PMP 人員領域",
+   "defer": true
+  },
+  {
+   "no": 4,
+   "name": "精實管理/六標準差概念",
+   "id": "MG-04",
+   "weeks": "W18–W21",
+   "content": "精實、價值流、DMAIC、浪費辨識",
+   "hours": 12,
+   "output": "DMAIC 小案例",
+   "relation": "製造/設備業常用",
+   "defer": true
+  },
+  {
+   "no": 5,
+   "name": "策略與績效(SWOT/BSC/OKR/KPI)",
+   "id": "MG-05",
+   "weeks": "W22–W25",
+   "content": "策略分析、平衡計分卡、OKR/KPI 設計",
+   "hours": 12,
+   "output": "個人 OKR+KPI",
+   "relation": "PMP 商業環境領域",
+   "defer": true
+  },
+  {
+   "no": 6,
+   "name": "供應鏈與營運管理",
+   "id": "MG-06",
+   "weeks": "W27–W30",
+   "content": "需求預測、庫存、產能、半導體設備供應鏈案例",
+   "hours": 12,
+   "output": "案例分析",
+   "relation": "設備產業背景",
+   "defer": true
+  },
+  {
+   "no": 7,
+   "name": "風險管理(ISO 31000/專案風險)",
+   "id": "MG-07",
+   "weeks": "W31–W33",
+   "content": "風險識別/評估/回應、風險登錄表",
+   "hours": 10,
+   "output": "風險登錄表範例",
+   "relation": "PMP 風險管理;碳風險",
+   "defer": false
+  },
+  {
+   "no": 8,
+   "name": "談判與衝突管理/商業溝通",
+   "id": "MG-08",
+   "weeks": "W34–W36",
+   "content": "BATNA、利益談判、跨部門溝通",
+   "hours": 8,
+   "output": "談判模擬紀錄",
+   "relation": "面試/職場",
+   "defer": true
+  },
+  {
+   "no": 9,
+   "name": "技術商品化與科專/政府計畫管理",
+   "id": "MG-09",
+   "weeks": "W37–W39",
+   "content": "計畫書結構、KPI/查核點、經費管理",
+   "hours": 8,
+   "output": "計畫書大綱",
+   "relation": "研究與產學計畫",
+   "defer": true
+  },
+  {
+   "no": 10,
+   "name": "變革管理+永續/ESG 管理",
+   "id": "MG-10",
+   "weeks": "W40–W41",
+   "content": "變革模型、ESG/永續報告、碳管理策略",
+   "hours": 6,
+   "output": "筆記+案例",
+   "relation": "碳淨零、PMP 新版永續議題",
+   "defer": false
+  },
+  {
+   "no": 11,
+   "name": "整合案例報告",
+   "id": "MG-11",
+   "weeks": "W42–W45",
+   "content": "整合 PMP+碳淨零+Omniverse 專案成案例",
+   "hours": 12,
+   "output": "案例報告 10 頁內",
+   "relation": "作品集/面試",
+   "defer": false
+  },
+  {
+   "no": 12,
+   "name": "職涯規劃與面試準備",
+   "id": "MG-12",
+   "weeks": "W46–W48",
+   "content": "目標職務、薪資、面試演練",
+   "hours": 4,
+   "output": "職涯規劃 1 頁",
+   "relation": "求職",
+   "defer": false
+  }
+ ],
+ "months": [
+  {
+   "month": "2026/10",
+   "weeks": "W1-W5",
+   "phase": "P1",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "環境建置:Python/conda/VS Code/Git/Jupyter",
+      "Python 進階+NumPy/Pandas/Matplotlib",
+      "線代/機率/微積分複習"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "LTspice+直流電路/戴維寧/疊加",
+      "RC/RL 暫態、相量、頻率響應/Bode"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "硬體確認+Omniverse 安裝與介面",
+      "USD 基礎(Prim/Stage/Layer)+材質燈光"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "確認 PMP 資格(學歷+專案領導經驗月數)並盤點專案",
+      "註冊 PMI 帳號、評估會員(含考試費差異)",
+      "研讀 2026 ECO+PMBOK 8 導覽,建立筆記架構",
+      "專案管理基礎+敏捷/Scrum 自學(先修)"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "管理學概論+組織行為"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "氣候變遷/2050 淨零路徑/碳費/CBAM 概覽"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "資管地圖+ER Model+SQL 基礎(JOIN/聚合/視窗)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "多益基準模測+建立單字本",
+      "聽力 Part1-4+文法 Part5-6"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "確定領域(建議:Omniverse 合成資料+AI 偵測)與指導者討論",
+      "文獻檢索(Scholar/IEEE/arXiv)+Zotero 建庫",
+      "文獻 20 篇與 research gap",
+      "定題目/研究問題/貢獻點"
+     ]
+    }
+   ],
+   "check": []
+  },
+  {
+   "month": "2026/11",
+   "weeks": "W6-W9",
+   "phase": "P1",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "線代/機率/微積分複習",
+      "ML 概論:線性/邏輯迴歸與評估指標",
+      "scikit-learn:SVM/樹模型/交叉驗證"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "RC/RL 暫態、相量、頻率響應/Bode",
+      "二極體/BJT/MOSFET 偏壓與放大"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "Python 腳本/Nucleus/PhysX/OmniGraph"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "專案管理基礎+敏捷/Scrum 自學(先修)"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "管理學概論+組織行為",
+      "財務報表/管理會計(Excel 練習)"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "氣候變遷/2050 淨零路徑/碳費/CBAM 概覽",
+      "GHG Protocol/ISO 14064 概念與名詞"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "Excel 進階+Power BI 儀表板",
+      "UML/SDLC/Scrum/Git 協作"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "聽力 Part1-4+文法 Part5-6",
+      "閱讀 Part7+口說 1 對 1(每週 2 次)"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "方法/資料集/評估指標設計",
+      "建立 baseline 環境與復現"
+     ]
+    }
+   ],
+   "check": []
+  },
+  {
+   "month": "2026/12",
+   "weeks": "W10-W13",
+   "phase": "P1",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "scikit-learn:SVM/樹模型/交叉驗證",
+      "Kaggle 入門賽實作",
+      "手刻神經網路+ML 小專案(P1 驗收)"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "Op-Amp 與主動濾波器(Sallen-Key)",
+      "訊號與系統(LTI/卷積)+電路報告(P1 驗收)"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "場景組裝+Extension+Replicator 入門",
+      "數位孿生小場景+Demo 影片(P1 驗收)"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "撰寫專案經歷草稿(目標/角色/成果,依過程組)"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "財務報表/管理會計(Excel 練習)"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "GHG Protocol/ISO 14064 概念與名詞",
+      "確認 iPAS 初級資格/梯次並建立備考計畫"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "UML/SDLC/Scrum/Git 協作",
+      "PRD+需求→ER→SQL→BI 小案(P1 驗收)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "閱讀 Part7+口說 1 對 1(每週 2 次)",
+      "全真模測(目標≥700)"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "建立 baseline 環境與復現",
+      "方法 v1 設計實作+初步實驗"
+     ]
+    }
+   ],
+   "check": [
+    "★ AI-07 手刻神經網路+ML 小專案(P1 驗收)",
+    "★ EE-05 訊號與系統(LTI/卷積)+電路報告(P1 驗收)",
+    "★ OM-05 數位孿生小場景+Demo 影片(P1 驗收)",
+    "★ IS-04 PRD+需求→ER→SQL→BI 小案(P1 驗收)",
+    "★ EN-04 全真模測(目標≥700)",
+    "★ TH-07 方法 v1 設計實作+初步實驗"
+   ]
+  },
+  {
+   "month": "2027/01",
+   "weeks": "W14-W18",
+   "phase": "P2",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "PyTorch 基礎與訓練迴圈",
+      "CNN 與遷移學習(CIFAR-10)",
+      "OpenCV+YOLO 自訂資料集偵測"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "取樣定理/混疊/DFT/FFT(Python)",
+      "Z 轉換/極零圖+FIR 窗函數設計",
+      "KiCad 安裝+第一塊 LED 板(2 層)",
+      "KiCad 完整流程:ERC→DRC→Gerber"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "Isaac Sim 安裝/URDF/Standalone Python",
+      "感測器模擬+Replicator 合成資料與標註"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "PMP 課程模組 1:人員(領導/團隊/衝突)",
+      "模組 2:流程(範疇/時程/成本/品質/風險/採購)"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "領導力與團隊管理",
+      "精實管理/六標準差概念(Green Belt 教材)"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "範疇 1/2/3 與排放係數",
+      "以公司設備或虛擬案例做 Excel 碳盤查"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "MIS/ERP/資料倉儲/ETL 概念",
+      "Python 自動化報表+RPA"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "閱讀速度+聽力進階題型"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "實驗 1~3(主要比較/參數/v2)",
+      "消融實驗+SOTA 比較"
+     ]
+    }
+   ],
+   "check": []
+  },
+  {
+   "month": "2027/02",
+   "weeks": "W19-W22",
+   "phase": "P2",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "OpenCV+YOLO 自訂資料集偵測",
+      "RNN/Transformer 原理+Hugging Face 微調"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "Z 轉換/極零圖+FIR 窗函數設計",
+      "IIR(Butterworth/Chebyshev)+STFT/小波",
+      "線寬/間距/過孔/電源與地平面規則"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "合成資料訓練 YOLO 並回測",
+      "ROS 2+Isaac ROS Bridge+導航模擬",
+      "Isaac Lab 入門+數位孿生流程(論文B 探索)"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "模組 2:流程(範疇/時程/成本/品質/風險/採購)",
+      "模組 3:商業環境(策略/治理/價值/AI 與永續)",
+      "取得 35 小時培訓證明+首次全真模擬考"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "精實管理/六標準差概念(Green Belt 教材)",
+      "策略與績效:SWOT/BSC/OKR/KPI"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "以公司設備或虛擬案例做 Excel 碳盤查"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "閱讀速度+聽力進階題型",
+      "全真模測(目標≥750)",
+      "學術單字+口說技術簡報"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "消融實驗+SOTA 比較",
+      "結果分析/圖表+撰寫 Method/Results"
+     ]
+    }
+   ],
+   "check": [
+    "★ PM-09 取得 35 小時培訓證明+首次全真模擬考",
+    "★ EN-06 全真模測(目標≥750)"
+   ]
+  },
+  {
+   "month": "2027/03",
+   "weeks": "W23-W26",
+   "phase": "P2",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "LLM 應用:Prompt/向量資料庫/RAG 實作",
+      "最佳化理論+DL 專題驗收(P2 驗收)"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "MATLAB/Python DSP 實作+DSP 報告",
+      "運放+ADC 類比前端 PCB(2 層)",
+      "檢查/打樣評估/BOM+PCB v1(P2 驗收)"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "Isaac Lab 入門+數位孿生流程(論文B 探索)",
+      "CAD/Revit 匯入(SimReady)+RTX 效能優化",
+      "合成資料→訓練→回測完整 pipeline(P2 驗收)"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "提交 PMP 申請並等待審核",
+      "章節題庫+錯題本",
+      "敏捷/混合式專案專題補強"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "策略與績效:SWOT/BSC/OKR/KPI"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "iPAS 初級題庫(第 1 輪)"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "AWS 雲端基礎(證照選修)",
+      "資料→BI→自動化報表專案(P2 驗收)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "學術單字+口說技術簡報",
+      "全真模測(目標≥800)"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "撰寫 Intro/Related Work/Conclusion+全文初稿",
+      "修訂 v2+英文潤稿",
+      "論文A 定稿投稿/上傳 arXiv",
+      "論文B 題目探索+文獻+定題(建議:DSP+AI/邊緣 AI)"
+     ]
+    }
+   ],
+   "check": [
+    "★ AI-13 最佳化理論+DL 專題驗收(P2 驗收)",
+    "★ EE-14 檢查/打樣評估/BOM+PCB v1(P2 驗收)",
+    "★ OM-12 合成資料→訓練→回測完整 pipeline(P2 驗收)",
+    "★ PM-10 提交 PMP 申請並等待審核",
+    "★ IS-08 資料→BI→自動化報表專案(P2 驗收)",
+    "★ EN-08 全真模測(目標≥800)",
+    "★ TH-13 論文A 定稿投稿/上傳 arXiv"
+   ]
+  },
+  {
+   "month": "2027/04",
+   "weeks": "W27-W31",
+   "phase": "P3",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "生成式 AI 概念+MLflow/DVC 實驗追蹤",
+      "Docker+FastAPI 模型服務+ONNX/TensorRT"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "4 層板疊構+SI/PI/EMC 概念",
+      "STM32/ESP32 最小系統設計與 layout"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "Isaac Lab RL 策略+Sim-to-Real/領域隨機化",
+      "IoT/MQTT/ROS 2 資料串接(Data Contract/Mapping)",
+      "Kit App 客製化/串流+AI 生成 3D 流程"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "敏捷/混合式專案專題補強",
+      "完整模擬考 ×4(穩定≥75%)",
+      "繳費並預約考場/線上監考",
+      "PMP 正式考試(目標 W31)"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "供應鏈與營運管理(半導體設備產業案例)",
+      "風險管理(ISO 31000/專案風險登錄表)"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "iPAS 初級題庫(第 2 輪)+模擬考",
+      "報名 iPAS 初級(依官網公告梯次)"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "AI 專案生命週期/ROI/資料治理",
+      "SQL 進階/NoSQL/資料工程概念"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "技術英文閱讀+模擬面試口說"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "論文B baseline 環境與復現",
+      "論文B 方法 v1+實驗 1~2"
+     ]
+    }
+   ],
+   "check": [
+    "★ PM-13 完整模擬考 ×4(穩定≥75%)",
+    "★ PM-15 PMP 正式考試(目標 W31)"
+   ]
+  },
+  {
+   "month": "2027/05",
+   "weeks": "W32-W35",
+   "phase": "P3",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "隨機程序+強化學習(Gym/Isaac Lab)",
+      "資料探勘+時間序列/訊號 AI+邊緣 AI"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "STM32/ESP32 最小系統設計與 layout",
+      "DFM 與 Layout 審查 checklist",
+      "Verilog/FPGA 概念(可延後)"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "Physical AI 概念閱讀+大場景 USD 協作",
+      "抓取 pick-and-place+感測融合/SLAM 概念"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "風險管理(ISO 31000/專案風險登錄表)",
+      "談判與衝突管理/商業溝通"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "iPAS 初級考試(目標 W33,依官網)",
+      "ISO 14064-1 溫室氣體盤查研習(1~3 天)"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "SQL 進階/NoSQL/資料工程概念",
+      "系統架構/技術文件/簡報"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "技術英文閱讀+模擬面試口說",
+      "全真模測(目標≥840)",
+      "弱項專攻+聽力/閱讀雙模測"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "論文B 方法 v2+實驗 3+消融+SOTA 比較",
+      "論文B 結果圖表+撰寫 Method/Results"
+     ]
+    }
+   ],
+   "check": [
+    "★ CN-09 iPAS 初級考試(目標 W33,依官網)",
+    "★ EN-10 全真模測(目標≥840)"
+   ]
+  },
+  {
+   "month": "2027/06",
+   "weeks": "W36-W39",
+   "phase": "P3",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "資料探勘+時間序列/訊號 AI+邊緣 AI",
+      "LLM Agent/MCP Demo+端到端 AI 服務(P3 驗收)"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "嵌入式 DSP/LMS/Kalman/通訊概論(可延後)",
+      "PCB v2+設計文件(P3 驗收)"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "數位孿生+AI 偵測展示專案",
+      "Omniverse 作品集(2 個 Demo)(P3 驗收)"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "備援考試窗:未過則檢討並重考"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "談判與衝突管理/商業溝通",
+      "技術商品化與科專/政府計畫管理"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "ISO 14064-1 溫室氣體盤查研習(1~3 天)",
+      "中級備考:節能減碳策略/碳管理(含計算題)"
+     ]
+    },
+    {
+     "name": "資管/資料/雲端",
+     "items": [
+      "AI+資管提案書與簡報(P3 驗收)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "弱項專攻+聽力/閱讀雙模測",
+      "全真模測(≥870~880)+報名 7 月實考"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "論文B 結果圖表+撰寫 Method/Results",
+      "論文B Intro/Related Work+全文初稿"
+     ]
+    }
+   ],
+   "check": [
+    "★ AI-18 LLM Agent/MCP Demo+端到端 AI 服務(P3 驗收)",
+    "★ EE-20 PCB v2+設計文件(P3 驗收)",
+    "★ OM-19 Omniverse 作品集(2 個 Demo)(P3 驗收)",
+    "★ CN-10 ISO 14064-1 溫室氣體盤查研習(1~3 天)",
+    "★ IS-12 AI+資管提案書與簡報(P3 驗收)",
+    "★ TH-19 論文B Intro/Related Work+全文初稿"
+   ]
+  },
+  {
+   "month": "2027/07",
+   "weeks": "W40-W44",
+   "phase": "P4",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "研究所預修:ML/DL 複習與期末級習題",
+      "論文精讀(ResNet/Attention/ViT)+LoRA 微調",
+      "作品集+LeetCode/ML 面試題"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "電路/電子學/DSP 總複習",
+      "PCB 作品整理+TinyML 小專題"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "專題優化(效能/文件)+NVIDIA DLI 課程",
+      "論文B 模擬驗證+作品集影片剪輯",
+      "社群分享/版本維護/整理研究題目"
+     ]
+    },
+    {
+     "name": "PMP 專案管理",
+     "items": [
+      "備援考試窗:未過則檢討並重考",
+      "通過後:PDU 維持計畫+履歷更新"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "變革管理+永續/ESG 管理",
+      "整合案例報告(PMP+碳淨零+Omniverse 專案)"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "中級備考:節能減碳策略/碳管理(含計算題)",
+      "報名 iPAS 中級(依官網)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "每週 2 回模測+錯題複盤",
+      "多益實考(7 月場次,依官網)",
+      "實考檢討/補考規劃"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "論文B 指導者/同儕審閱+補實驗",
+      "論文B 修訂 v2+英文潤稿",
+      "論文B 投稿檢核與投稿"
+     ]
+    }
+   ],
+   "check": [
+    "★ EN-14 多益實考(7 月場次,依官網)"
+   ]
+  },
+  {
+   "month": "2027/08",
+   "weeks": "W45-W48",
+   "phase": "P4",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "作品集+LeetCode/ML 面試題",
+      "補弱+入學準備(選課/拜訪教授)"
+     ]
+    },
+    {
+     "name": "電路/DSP/PCB",
+     "items": [
+      "DSP+AI 整合(1D-CNN)+datasheet 閱讀"
+     ]
+    },
+    {
+     "name": "Omniverse/Real-to-Sim",
+     "items": [
+      "社群分享/版本維護/整理研究題目"
+     ]
+    },
+    {
+     "name": "管理課程",
+     "items": [
+      "整合案例報告(PMP+碳淨零+Omniverse 專案)",
+      "職涯規劃與面試準備"
+     ]
+    },
+    {
+     "name": "碳淨零",
+     "items": [
+      "iPAS 中級考試(目標 W48,依官網)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "學術英文+面試英文+自由對話 15 分鐘"
+     ]
+    },
+    {
+     "name": "論文 A/B",
+     "items": [
+      "論文B 投稿檢核與投稿",
+      "論文B 回覆審稿/程式與資料集開源",
+      "論文B 定稿+整理成研究所研究計畫"
+     ]
+    }
+   ],
+   "check": [
+    "★ MG-11 整合案例報告(PMP+碳淨零+Omniverse 專案)",
+    "★ CN-13 iPAS 中級考試(目標 W48,依官網)",
+    "★ TH-22 論文B 投稿檢核與投稿",
+    "★ TH-24 論文B 定稿+整理成研究所研究計畫"
+   ]
+  },
+  {
+   "month": "2027/09",
+   "weeks": "W49-W49",
+   "phase": "P4",
+   "topics": [
+    {
+     "name": "AI/ML 與數學",
+     "items": [
+      "補弱+入學準備(選課/拜訪教授)"
+     ]
+    },
+    {
+     "name": "英文(多益900+口說)",
+     "items": [
+      "緩衝:每日 30 分鐘聽說維持"
+     ]
+    }
+   ],
+   "check": []
+  }
+ ],
+ "tools": [
+  {
+   "area": "Omniverse",
+   "name": "Omniverse Kit/USD Composer/OpenUSD",
+   "use": "場景編輯、USD 資產",
+   "heat": "高",
+   "output": "小場景+腳本"
+  },
+  {
+   "area": "Omniverse",
+   "name": "Isaac Sim/Replicator/Isaac Lab",
+   "use": "機器人模擬、合成資料、RL",
+   "heat": "高",
+   "output": "合成資料 pipeline"
+  },
+  {
+   "area": "Omniverse",
+   "name": "ROS 2",
+   "use": "機器人中介軟體/Real-to-Sim 資料串接",
+   "heat": "高",
+   "output": "Mapping 規格"
+  },
+  {
+   "area": "Omniverse",
+   "name": "CAD→OpenUSD/SimReady 流程",
+   "use": "工程資產轉換",
+   "heat": "中",
+   "output": "流程文件"
+  },
+  {
+   "area": "AI",
+   "name": "Python/NumPy/Pandas/scikit-learn",
+   "use": "資料與傳統 ML",
+   "heat": "高",
+   "output": "Kaggle"
+  },
+  {
+   "area": "AI",
+   "name": "PyTorch",
+   "use": "深度學習主力框架",
+   "heat": "高",
+   "output": "自訂資料集"
+  },
+  {
+   "area": "AI",
+   "name": "OpenCV/Ultralytics YOLO",
+   "use": "影像偵測",
+   "heat": "高",
+   "output": "mAP 報告"
+  },
+  {
+   "area": "AI",
+   "name": "Hugging Face/PEFT(LoRA)",
+   "use": "NLP/LLM 微調",
+   "heat": "高",
+   "output": "微調 Notebook"
+  },
+  {
+   "area": "AI",
+   "name": "LangChain/LlamaIndex+向量資料庫",
+   "use": "RAG",
+   "heat": "高",
+   "output": "文件問答"
+  },
+  {
+   "area": "AI",
+   "name": "LLM Agent/工具呼叫/MCP",
+   "use": "AI 代理",
+   "heat": "高",
+   "output": "Agent Demo"
+  },
+  {
+   "area": "AI",
+   "name": "AI 輔助開發工具(Claude Code/Cursor/Copilot)",
+   "use": "提升開發效率",
+   "heat": "高",
+   "output": "用於專案並驗證輸出"
+  },
+  {
+   "area": "AI",
+   "name": "MLflow/DVC/Docker/FastAPI/ONNX",
+   "use": "MLOps 與部署",
+   "heat": "高",
+   "output": "API 服務"
+  },
+  {
+   "area": "電路/DSP",
+   "name": "LTspice",
+   "use": "電路模擬",
+   "heat": "高",
+   "output": "3 電路報告"
+  },
+  {
+   "area": "電路/DSP",
+   "name": "MATLAB/Python scipy.signal",
+   "use": "DSP",
+   "heat": "高",
+   "output": "濾波器設計"
+  },
+  {
+   "area": "PCB",
+   "name": "KiCad/Altium Designer",
+   "use": "PCB 設計",
+   "heat": "高",
+   "output": "PCB v1/v2"
+  },
+  {
+   "area": "PCB",
+   "name": "STM32/ESP32+CMSIS-DSP",
+   "use": "嵌入式",
+   "heat": "中",
+   "output": "即時濾波"
+  },
+  {
+   "area": "專案管理",
+   "name": "PMP 2026 ECO/PMBOK 8",
+   "use": "考試大綱與知識體系",
+   "heat": "高",
+   "output": "筆記"
+  },
+  {
+   "area": "專案管理",
+   "name": "MS Project/Jira/Notion/甘特圖",
+   "use": "排程與看板",
+   "heat": "高",
+   "output": "個人專案排程"
+  },
+  {
+   "area": "專案管理",
+   "name": "PMP 題庫/模擬器",
+   "use": "備考",
+   "heat": "高",
+   "output": "模考成績表"
+  },
+  {
+   "area": "專案管理",
+   "name": "敏捷/Scrum/混合式",
+   "use": "新版 ECO 比重高",
+   "heat": "高",
+   "output": "敏捷筆記"
+  },
+  {
+   "area": "管理",
+   "name": "Excel 財務/成本模型",
+   "use": "管理會計",
+   "heat": "中",
+   "output": "成本模型"
+  },
+  {
+   "area": "管理",
+   "name": "BSC/OKR/KPI",
+   "use": "策略與績效",
+   "heat": "中",
+   "output": "個人 OKR"
+  },
+  {
+   "area": "管理",
+   "name": "ISO 31000/風險登錄表",
+   "use": "風險管理",
+   "heat": "中",
+   "output": "風險登錄表"
+  },
+  {
+   "area": "碳淨零",
+   "name": "GHG Protocol/ISO 14064-1/ISO 14067",
+   "use": "盤查與查證",
+   "heat": "高",
+   "output": "名詞表/結業證明"
+  },
+  {
+   "area": "碳淨零",
+   "name": "Excel 碳盤查模板+排放係數",
+   "use": "碳盤查實作",
+   "heat": "高",
+   "output": "盤查檔"
+  },
+  {
+   "area": "碳淨零",
+   "name": "碳費/CBAM/ISSB(IFRS S1,S2)概念",
+   "use": "法規與揭露",
+   "heat": "高",
+   "output": "筆記"
+  },
+  {
+   "area": "碳淨零",
+   "name": "iPAS 淨零碳規劃管理師題庫",
+   "use": "考照",
+   "heat": "高",
+   "output": "模擬考成績"
+  },
+  {
+   "area": "資管",
+   "name": "SQL/PostgreSQL/Power BI/Excel Power Query",
+   "use": "資料與 BI",
+   "heat": "高",
+   "output": "小案"
+  },
+  {
+   "area": "資管",
+   "name": "UML/PRD/Git",
+   "use": "系統分析與協作",
+   "heat": "中",
+   "output": "PRD"
+  },
+  {
+   "area": "資管",
+   "name": "ERP/資料倉儲/RPA/AWS",
+   "use": "企業系統",
+   "heat": "中",
+   "output": "自動化報表"
+  },
+  {
+   "area": "英文",
+   "name": "多益(LC+RC)",
+   "use": "900 分",
+   "heat": "高",
+   "output": "模測紀錄"
+  },
+  {
+   "area": "英文",
+   "name": "影子跟讀/Anki/口說 1 對 1",
+   "use": "聽說",
+   "heat": "高",
+   "output": "錄音"
+  },
+  {
+   "area": "研究",
+   "name": "Zotero/arXiv/Google Scholar/Overleaf",
+   "use": "文獻與寫作",
+   "heat": "高",
+   "output": "論文A/B"
+  }
+ ],
+ "subjects": [
+  {
+   "slug": "ai",
+   "short": "AI／機器學習",
+   "tag": "AI",
+   "line": {
+    "name": "AI/ML 與數學",
+    "goal": "ML 小專案→DL 專題→端到端 AI 服務→作品集",
+    "link": "研究所預修(ML/DL/最佳化)",
+    "weeks": "W1–W49",
+    "hours": "8/7/6/4",
+    "risk": "時間被擠壓",
+    "focus": "做專案,不只看課",
+    "evidence": "Repo/Demo",
+    "ids": "AI-01~22",
+    "subs": [
+     {
+      "line": "AI/ML 與數學",
+      "sub": "AI-1 數學與 Python 基礎",
+      "content": "環境、Python/NumPy/Pandas、線代/機率/微積分複習",
+      "resource": "線上課程/教材",
+      "evidence": "筆記+Notebook",
+      "target": "習題≥80%;GitHub 每週 commit"
+     },
+     {
+      "line": "AI/ML 與數學",
+      "sub": "AI-2 ML 基礎",
+      "content": "迴歸/分類/評估/sklearn/Kaggle/手刻神經網路",
+      "resource": "吳恩達/李宏毅課程",
+      "evidence": "GitHub repo",
+      "target": "ML 小專案 1 件"
+     },
+     {
+      "line": "AI/ML 與數學",
+      "sub": "AI-3 深度學習與 LLM",
+      "content": "PyTorch/CNN/YOLO/Transformer/RAG/最佳化",
+      "resource": "CS231n/Hugging Face 課程",
+      "evidence": "專題報告+Demo",
+      "target": "DL 專題 1 件"
+     },
+     {
+      "line": "AI/ML 與數學",
+      "sub": "AI-4 部署/MLOps/RL",
+      "content": "MLflow/Docker/FastAPI/ONNX/強化學習/邊緣 AI",
+      "resource": "官方文件",
+      "evidence": "API+Docker+雲端 Demo",
+      "target": "端到端 AI 服務 1 套"
+     },
+     {
+      "line": "AI/ML 與數學",
+      "sub": "AI-5 研究所預修與作品集",
+      "content": "ML/DL 預修複習、論文精讀、作品集、面試題",
+      "resource": "LeetCode/論文",
+      "evidence": "作品集網站",
+      "target": "作品集 3 件;面試題≥100 題"
+     }
+    ],
+    "kpi": {
+     "name": "AI/ML 與數學",
+     "weight": 0.14,
+     "gate": "ML 小專案+DL 專題完成",
+     "close": "端到端 AI 服務+作品集;研究所預修複習完成",
+     "evidence": "Repo/Demo"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "環境建置:Python/conda/VS Code/Git/Jupyter",
+      "Python 進階+NumPy/Pandas/Matplotlib",
+      "線代/機率/微積分複習"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "線代/機率/微積分複習",
+      "ML 概論:線性/邏輯迴歸與評估指標",
+      "scikit-learn:SVM/樹模型/交叉驗證"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "scikit-learn:SVM/樹模型/交叉驗證",
+      "Kaggle 入門賽實作",
+      "手刻神經網路+ML 小專案(P1 驗收)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "PyTorch 基礎與訓練迴圈",
+      "CNN 與遷移學習(CIFAR-10)",
+      "OpenCV+YOLO 自訂資料集偵測"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "OpenCV+YOLO 自訂資料集偵測",
+      "RNN/Transformer 原理+Hugging Face 微調"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "LLM 應用:Prompt/向量資料庫/RAG 實作",
+      "最佳化理論+DL 專題驗收(P2 驗收)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "生成式 AI 概念+MLflow/DVC 實驗追蹤",
+      "Docker+FastAPI 模型服務+ONNX/TensorRT"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "隨機程序+強化學習(Gym/Isaac Lab)",
+      "資料探勘+時間序列/訊號 AI+邊緣 AI"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "資料探勘+時間序列/訊號 AI+邊緣 AI",
+      "LLM Agent/MCP Demo+端到端 AI 服務(P3 驗收)"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "研究所預修:ML/DL 複習與期末級習題",
+      "論文精讀(ResNet/Attention/ViT)+LoRA 微調",
+      "作品集+LeetCode/ML 面試題"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "作品集+LeetCode/ML 面試題",
+      "補弱+入學準備(選課/拜訪教授)"
+     ]
+    },
+    {
+     "month": "2027/09",
+     "phase": "P4",
+     "items": [
+      "補弱+入學準備(選課/拜訪教授)"
+     ]
+    }
+   ],
+   "exams": [],
+   "tools": [
+    {
+     "area": "AI",
+     "name": "Python/NumPy/Pandas/scikit-learn",
+     "use": "資料與傳統 ML",
+     "heat": "高",
+     "output": "Kaggle"
+    },
+    {
+     "area": "AI",
+     "name": "PyTorch",
+     "use": "深度學習主力框架",
+     "heat": "高",
+     "output": "自訂資料集"
+    },
+    {
+     "area": "AI",
+     "name": "OpenCV/Ultralytics YOLO",
+     "use": "影像偵測",
+     "heat": "高",
+     "output": "mAP 報告"
+    },
+    {
+     "area": "AI",
+     "name": "Hugging Face/PEFT(LoRA)",
+     "use": "NLP/LLM 微調",
+     "heat": "高",
+     "output": "微調 Notebook"
+    },
+    {
+     "area": "AI",
+     "name": "LangChain/LlamaIndex+向量資料庫",
+     "use": "RAG",
+     "heat": "高",
+     "output": "文件問答"
+    },
+    {
+     "area": "AI",
+     "name": "LLM Agent/工具呼叫/MCP",
+     "use": "AI 代理",
+     "heat": "高",
+     "output": "Agent Demo"
+    },
+    {
+     "area": "AI",
+     "name": "AI 輔助開發工具(Claude Code/Cursor/Copilot)",
+     "use": "提升開發效率",
+     "heat": "高",
+     "output": "用於專案並驗證輸出"
+    },
+    {
+     "area": "AI",
+     "name": "MLflow/DVC/Docker/FastAPI/ONNX",
+     "use": "MLOps 與部署",
+     "heat": "高",
+     "output": "API 服務"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 49
+  },
+  {
+   "slug": "circuits",
+   "short": "電路／DSP／PCB",
+   "tag": "電子電路",
+   "line": {
+    "name": "電路/DSP/PCB",
+    "goal": "LTspice→DSP 報告→PCB v1→v2",
+    "link": "研究所預修(電路/DSP)",
+    "weeks": "W1–W46",
+    "hours": "6/7/6/3",
+    "risk": "打樣週期",
+    "focus": "每階段 1 件可驗收作品",
+    "evidence": "Gerber/報告",
+    "ids": "EE-01~23",
+    "subs": [
+     {
+      "line": "電路/DSP/PCB",
+      "sub": "EE-1 電路基礎",
+      "content": "直流/暫態/相量/二極體/BJT/MOSFET/Op-Amp/訊號與系統",
+      "resource": "Sedra-Smith/Razavi",
+      "evidence": "模擬檔+報告",
+      "target": "LTspice 3 個電路報告"
+     },
+     {
+      "line": "電路/DSP/PCB",
+      "sub": "EE-2 DSP",
+      "content": "取樣/FFT/Z 轉換/FIR/IIR/STFT",
+      "resource": "Oppenheim/Smith DSP 書",
+      "evidence": "Notebook/報告",
+      "target": "FIR/IIR 設計各 1;DSP 報告"
+     },
+     {
+      "line": "電路/DSP/PCB",
+      "sub": "EE-3 KiCad PCB",
+      "content": "LED 板→類比前端板,完整 ERC/DRC/Gerber 流程",
+      "resource": "KiCad 官方教學",
+      "evidence": "KiCad 專案+Gerber",
+      "target": "PCB v1 Gerber"
+     },
+     {
+      "line": "電路/DSP/PCB",
+      "sub": "EE-4 進階 PCB/嵌入式",
+      "content": "4 層板/SI/PI/EMC/STM32 layout/DFM/嵌入式 DSP",
+      "resource": "Altium/KiCad",
+      "evidence": "設計報告;ERC/DRC 0 錯",
+      "target": "PCB v2+設計文件"
+     },
+     {
+      "line": "電路/DSP/PCB",
+      "sub": "EE-5 研究所預修",
+      "content": "電路/DSP 總複習、PCB 作品整理、DSP+AI 整合",
+      "resource": "教材習題",
+      "evidence": "習題檔+作品 PDF",
+      "target": "習題≥80%"
+     }
+    ],
+    "kpi": {
+     "name": "電路/DSP/PCB",
+     "weight": 0.12,
+     "gate": "LTspice+DSP 報告+PCB v1 Gerber",
+     "close": "PCB v2+電路/DSP 預修習題≥80%",
+     "evidence": "Gerber/報告"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "LTspice+直流電路/戴維寧/疊加",
+      "RC/RL 暫態、相量、頻率響應/Bode"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "RC/RL 暫態、相量、頻率響應/Bode",
+      "二極體/BJT/MOSFET 偏壓與放大"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "Op-Amp 與主動濾波器(Sallen-Key)",
+      "訊號與系統(LTI/卷積)+電路報告(P1 驗收)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "取樣定理/混疊/DFT/FFT(Python)",
+      "Z 轉換/極零圖+FIR 窗函數設計",
+      "KiCad 安裝+第一塊 LED 板(2 層)",
+      "KiCad 完整流程:ERC→DRC→Gerber"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "Z 轉換/極零圖+FIR 窗函數設計",
+      "IIR(Butterworth/Chebyshev)+STFT/小波",
+      "線寬/間距/過孔/電源與地平面規則"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "MATLAB/Python DSP 實作+DSP 報告",
+      "運放+ADC 類比前端 PCB(2 層)",
+      "檢查/打樣評估/BOM+PCB v1(P2 驗收)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "4 層板疊構+SI/PI/EMC 概念",
+      "STM32/ESP32 最小系統設計與 layout"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "STM32/ESP32 最小系統設計與 layout",
+      "DFM 與 Layout 審查 checklist",
+      "Verilog/FPGA 概念(可延後)"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "嵌入式 DSP/LMS/Kalman/通訊概論(可延後)",
+      "PCB v2+設計文件(P3 驗收)"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "電路/電子學/DSP 總複習",
+      "PCB 作品整理+TinyML 小專題"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "DSP+AI 整合(1D-CNN)+datasheet 閱讀"
+     ]
+    }
+   ],
+   "exams": [],
+   "tools": [
+    {
+     "area": "電路/DSP",
+     "name": "LTspice",
+     "use": "電路模擬",
+     "heat": "高",
+     "output": "3 電路報告"
+    },
+    {
+     "area": "電路/DSP",
+     "name": "MATLAB/Python scipy.signal",
+     "use": "DSP",
+     "heat": "高",
+     "output": "濾波器設計"
+    },
+    {
+     "area": "PCB",
+     "name": "KiCad/Altium Designer",
+     "use": "PCB 設計",
+     "heat": "高",
+     "output": "PCB v1/v2"
+    },
+    {
+     "area": "PCB",
+     "name": "STM32/ESP32+CMSIS-DSP",
+     "use": "嵌入式",
+     "heat": "中",
+     "output": "即時濾波"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 46
+  },
+  {
+   "slug": "omniverse",
+   "short": "Omniverse 數位孿生",
+   "tag": "Omniverse",
+   "line": {
+    "name": "Omniverse/Real-to-Sim",
+    "goal": "小場景→合成資料 pipeline→數位孿生展示",
+    "link": "與本職 Real-to-Sim 工作相互驗證",
+    "weeks": "W1–W48",
+    "hours": "4/3/4/2",
+    "risk": "授權/版本/資料權限",
+    "focus": "把 3D 展示升級成資料驅動 Twin",
+    "evidence": "Scene/Demo",
+    "ids": "OM-01~22",
+    "subs": [
+     {
+      "line": "Omniverse/Real-to-Sim",
+      "sub": "OM-1 USD/Omniverse 基礎",
+      "content": "安裝、USD、材質燈光、腳本、PhysX、OmniGraph、小場景",
+      "resource": "NVIDIA 官方文件",
+      "evidence": "Scene+Demo 影片",
+      "target": "數位孿生小場景 1 個"
+     },
+     {
+      "line": "Omniverse/Real-to-Sim",
+      "sub": "OM-2 Isaac Sim 與合成資料",
+      "content": "Isaac Sim、感測器、Replicator、ROS 2、Isaac Lab、CAD/SimReady",
+      "resource": "NVIDIA 官方文件/DLI",
+      "evidence": "Pipeline+報告",
+      "target": "合成資料→訓練→回測 pipeline"
+     },
+     {
+      "line": "Omniverse/Real-to-Sim",
+      "sub": "OM-3 Real-to-Sim 與數位孿生應用",
+      "content": "RL/Sim-to-Real、資料串接、Kit App、Physical AI、展示專案",
+      "resource": "官方文件/論文",
+      "evidence": "Demo+文件",
+      "target": "作品集 2 個 Demo"
+     },
+     {
+      "line": "Omniverse/Real-to-Sim",
+      "sub": "OM-4 作品優化",
+      "content": "作品優化、DLI、論文B 模擬驗證、社群分享",
+      "resource": "DLI",
+      "evidence": "影片+部落格",
+      "target": "作品集影片"
+     }
+    ],
+    "kpi": {
+     "name": "Omniverse/Real-to-Sim",
+     "weight": 0.12,
+     "gate": "合成資料→訓練→回測 pipeline",
+     "close": "Omniverse 作品集 2 Demo+Real-to-Sim 展示",
+     "evidence": "Scene/Demo"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "硬體確認+Omniverse 安裝與介面",
+      "USD 基礎(Prim/Stage/Layer)+材質燈光"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "Python 腳本/Nucleus/PhysX/OmniGraph"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "場景組裝+Extension+Replicator 入門",
+      "數位孿生小場景+Demo 影片(P1 驗收)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "Isaac Sim 安裝/URDF/Standalone Python",
+      "感測器模擬+Replicator 合成資料與標註"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "合成資料訓練 YOLO 並回測",
+      "ROS 2+Isaac ROS Bridge+導航模擬",
+      "Isaac Lab 入門+數位孿生流程(論文B 探索)"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "Isaac Lab 入門+數位孿生流程(論文B 探索)",
+      "CAD/Revit 匯入(SimReady)+RTX 效能優化",
+      "合成資料→訓練→回測完整 pipeline(P2 驗收)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "Isaac Lab RL 策略+Sim-to-Real/領域隨機化",
+      "IoT/MQTT/ROS 2 資料串接(Data Contract/Mapping)",
+      "Kit App 客製化/串流+AI 生成 3D 流程"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "Physical AI 概念閱讀+大場景 USD 協作",
+      "抓取 pick-and-place+感測融合/SLAM 概念"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "數位孿生+AI 偵測展示專案",
+      "Omniverse 作品集(2 個 Demo)(P3 驗收)"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "專題優化(效能/文件)+NVIDIA DLI 課程",
+      "論文B 模擬驗證+作品集影片剪輯",
+      "社群分享/版本維護/整理研究題目"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "社群分享/版本維護/整理研究題目"
+     ]
+    }
+   ],
+   "exams": [],
+   "tools": [
+    {
+     "area": "Omniverse",
+     "name": "Omniverse Kit/USD Composer/OpenUSD",
+     "use": "場景編輯、USD 資產",
+     "heat": "高",
+     "output": "小場景+腳本"
+    },
+    {
+     "area": "Omniverse",
+     "name": "Isaac Sim/Replicator/Isaac Lab",
+     "use": "機器人模擬、合成資料、RL",
+     "heat": "高",
+     "output": "合成資料 pipeline"
+    },
+    {
+     "area": "Omniverse",
+     "name": "ROS 2",
+     "use": "機器人中介軟體/Real-to-Sim 資料串接",
+     "heat": "高",
+     "output": "Mapping 規格"
+    },
+    {
+     "area": "Omniverse",
+     "name": "CAD→OpenUSD/SimReady 流程",
+     "use": "工程資產轉換",
+     "heat": "中",
+     "output": "流程文件"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 48
+  },
+  {
+   "slug": "pmp",
+   "short": "PMP 專案管理",
+   "tag": "PMP",
+   "line": {
+    "name": "PMP 專案管理",
+    "goal": "資格→35 小時課程→申請→模考→正式考試",
+    "link": "PMP(新版 2026 ECO),目標 W31",
+    "weeks": "W1–W41",
+    "hours": "(併入 PMP/管理 5/7/7/6)",
+    "risk": "資格/審核/新版題型",
+    "focus": "先確認資格;模考≥75% 再預約",
+    "evidence": "培訓證明/成績單",
+    "ids": "PM-01~17",
+    "subs": [
+     {
+      "line": "PMP 專案管理",
+      "sub": "PM-1 資格與申請準備",
+      "content": "確認資格、PMI 帳號、2026 ECO、PM/敏捷先修、經歷草稿",
+      "resource": "PMI 官網",
+      "evidence": "資格清單+草稿",
+      "target": "資格確認+經歷草稿完成"
+     },
+     {
+      "line": "PMP 專案管理",
+      "sub": "PM-2 PMP 35 小時課程",
+      "content": "人員/流程/商業環境三大領域正式課程",
+      "resource": "PMI 認可培訓機構",
+      "evidence": "培訓證明+筆記",
+      "target": "35 小時培訓證明"
+     },
+     {
+      "line": "PMP 專案管理",
+      "sub": "PM-3 PMP 申請與題庫模擬",
+      "content": "送出申請、章節題庫、敏捷混合補強、模擬考、預約",
+      "resource": "題庫/模擬器",
+      "evidence": "模考成績表",
+      "target": "模擬考穩定≥75%"
+     },
+     {
+      "line": "PMP 專案管理",
+      "sub": "PM-4 PMP 考試與維持",
+      "content": "正式考試、備援考試窗、PDU 維持",
+      "resource": "Pearson VUE/PMI",
+      "evidence": "成績單/證書",
+      "target": "PMP 通過"
+     }
+    ],
+    "kpi": {
+     "name": "PMP 專案管理",
+     "weight": 0.15,
+     "gate": "35 小時培訓完成;PMP 申請送出",
+     "close": "PMP 通過(W31;備援 W38-40)+PDU 維持計畫",
+     "evidence": "培訓證明/成績單"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "確認 PMP 資格(學歷+專案領導經驗月數)並盤點專案",
+      "註冊 PMI 帳號、評估會員(含考試費差異)",
+      "研讀 2026 ECO+PMBOK 8 導覽,建立筆記架構",
+      "專案管理基礎+敏捷/Scrum 自學(先修)"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "專案管理基礎+敏捷/Scrum 自學(先修)"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "撰寫專案經歷草稿(目標/角色/成果,依過程組)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "PMP 課程模組 1:人員(領導/團隊/衝突)",
+      "模組 2:流程(範疇/時程/成本/品質/風險/採購)"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "模組 2:流程(範疇/時程/成本/品質/風險/採購)",
+      "模組 3:商業環境(策略/治理/價值/AI 與永續)",
+      "取得 35 小時培訓證明+首次全真模擬考"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "提交 PMP 申請並等待審核",
+      "章節題庫+錯題本",
+      "敏捷/混合式專案專題補強"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "敏捷/混合式專案專題補強",
+      "完整模擬考 ×4(穩定≥75%)",
+      "繳費並預約考場/線上監考",
+      "PMP 正式考試(目標 W31)"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "備援考試窗:未過則檢討並重考"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "備援考試窗:未過則檢討並重考",
+      "通過後:PDU 維持計畫+履歷更新"
+     ]
+    }
+   ],
+   "exams": [
+    {
+     "name": "PMP(專案管理專業人員)",
+     "kind": "PMI 國際證照",
+     "req": "學士+36 個月專案領導經驗+35 小時培訓(無學士為 60 個月);細節以 PMI 官網為準",
+     "prep": "W1–W31",
+     "apply": "申請 W23–W24;預約 W28",
+     "week": "31",
+     "start": "2027-04-26",
+     "end": "2027-05-02",
+     "backup": "W38–W40 備援考試窗",
+     "ids": "PM-01~PM-17",
+     "note": "若經驗月數不足,W2 前決定改走 CAPM(23 小時培訓,無經驗門檻,以官網為準)並調整 PM 任務"
+    },
+    {
+     "name": "CAPM(備援)",
+     "kind": "PMI 入門證照",
+     "req": "僅在 PMP 資格不足時採用",
+     "prep": "W3–W20",
+     "apply": "視 W2 資格評估",
+     "week": "—",
+     "start": "",
+     "end": "",
+     "backup": "—",
+     "ids": "PM-01",
+     "note": "非預設路徑"
+    }
+   ],
+   "tools": [
+    {
+     "area": "專案管理",
+     "name": "PMP 2026 ECO/PMBOK 8",
+     "use": "考試大綱與知識體系",
+     "heat": "高",
+     "output": "筆記"
+    },
+    {
+     "area": "專案管理",
+     "name": "MS Project/Jira/Notion/甘特圖",
+     "use": "排程與看板",
+     "heat": "高",
+     "output": "個人專案排程"
+    },
+    {
+     "area": "專案管理",
+     "name": "PMP 題庫/模擬器",
+     "use": "備考",
+     "heat": "高",
+     "output": "模考成績表"
+    },
+    {
+     "area": "專案管理",
+     "name": "敏捷/Scrum/混合式",
+     "use": "新版 ECO 比重高",
+     "heat": "高",
+     "output": "敏捷筆記"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 41
+  },
+  {
+   "slug": "management",
+   "short": "管理課程",
+   "tag": "管理",
+   "line": {
+    "name": "管理課程",
+    "goal": "12 個管理主題與整合案例",
+    "link": "PMP 商業環境/人員領域補強",
+    "weeks": "W4–W48",
+    "hours": "(同上)",
+    "risk": "課量大",
+    "focus": "可延後項為緩衝",
+    "evidence": "筆記/案例",
+    "ids": "MG-01~12",
+    "subs": [
+     {
+      "line": "管理課程",
+      "sub": "MG-1 管理基礎",
+      "content": "管理學概論、組織行為、財務報表與管理會計",
+      "resource": "開放課程/Coursera/edX",
+      "evidence": "課程證明/筆記",
+      "target": "2 門課筆記+作業"
+     },
+     {
+      "line": "管理課程",
+      "sub": "MG-2 領導與營運",
+      "content": "領導力、精實管理/六標準差、策略與績效(BSC/OKR)",
+      "resource": "開放課程/Coursera/edX",
+      "evidence": "課程證明/案例",
+      "target": "3 門課筆記+案例"
+     },
+     {
+      "line": "管理課程",
+      "sub": "MG-3 進階管理",
+      "content": "供應鏈營運、風險管理、談判溝通、技術商品化/科專管理",
+      "resource": "開放課程/企管課程",
+      "evidence": "課程證明/案例",
+      "target": "4 門課筆記+案例"
+     },
+     {
+      "line": "管理課程",
+      "sub": "MG-4 應用與職涯",
+      "content": "變革/ESG 管理、整合案例報告、職涯規劃",
+      "resource": "自學",
+      "evidence": "案例報告",
+      "target": "案例報告 1 份"
+     }
+    ],
+    "kpi": {
+     "name": "管理課程",
+     "weight": 0.06,
+     "gate": "管理基礎+領導營運課程(可延後項除外)",
+     "close": "整合案例報告完成;可延後項依進度取捨",
+     "evidence": "案例報告"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "管理學概論+組織行為"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "管理學概論+組織行為",
+      "財務報表/管理會計(Excel 練習)"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "財務報表/管理會計(Excel 練習)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "領導力與團隊管理",
+      "精實管理/六標準差概念(Green Belt 教材)"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "精實管理/六標準差概念(Green Belt 教材)",
+      "策略與績效:SWOT/BSC/OKR/KPI"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "策略與績效:SWOT/BSC/OKR/KPI"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "供應鏈與營運管理(半導體設備產業案例)",
+      "風險管理(ISO 31000/專案風險登錄表)"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "風險管理(ISO 31000/專案風險登錄表)",
+      "談判與衝突管理/商業溝通"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "談判與衝突管理/商業溝通",
+      "技術商品化與科專/政府計畫管理"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "變革管理+永續/ESG 管理",
+      "整合案例報告(PMP+碳淨零+Omniverse 專案)"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "整合案例報告(PMP+碳淨零+Omniverse 專案)",
+      "職涯規劃與面試準備"
+     ]
+    }
+   ],
+   "exams": [],
+   "tools": [
+    {
+     "area": "管理",
+     "name": "Excel 財務/成本模型",
+     "use": "管理會計",
+     "heat": "中",
+     "output": "成本模型"
+    },
+    {
+     "area": "管理",
+     "name": "BSC/OKR/KPI",
+     "use": "策略與績效",
+     "heat": "中",
+     "output": "個人 OKR"
+    },
+    {
+     "area": "管理",
+     "name": "ISO 31000/風險登錄表",
+     "use": "風險管理",
+     "heat": "中",
+     "output": "風險登錄表"
+    }
+   ],
+   "courses": [
+    {
+     "no": 1,
+     "name": "管理學概論+組織行為",
+     "id": "MG-01",
+     "weeks": "W4–W7",
+     "content": "計畫/組織/領導/控制;個人與團隊行為",
+     "hours": 15,
+     "output": "課程筆記+作業",
+     "relation": "PMP 人員領域基礎",
+     "defer": false
+    },
+    {
+     "no": 2,
+     "name": "財務報表與管理會計",
+     "id": "MG-02",
+     "weeks": "W8–W13",
+     "content": "三大報表、成本分析、預算、損益平衡(Excel)",
+     "hours": 15,
+     "output": "成本分析 Excel",
+     "relation": "專案成本管理",
+     "defer": true
+    },
+    {
+     "no": 3,
+     "name": "領導力與團隊管理",
+     "id": "MG-03",
+     "weeks": "W14–W17",
+     "content": "領導風格、激勵、衝突、教練",
+     "hours": 12,
+     "output": "案例心得",
+     "relation": "PMP 人員領域",
+     "defer": true
+    },
+    {
+     "no": 4,
+     "name": "精實管理/六標準差概念",
+     "id": "MG-04",
+     "weeks": "W18–W21",
+     "content": "精實、價值流、DMAIC、浪費辨識",
+     "hours": 12,
+     "output": "DMAIC 小案例",
+     "relation": "製造/設備業常用",
+     "defer": true
+    },
+    {
+     "no": 5,
+     "name": "策略與績效(SWOT/BSC/OKR/KPI)",
+     "id": "MG-05",
+     "weeks": "W22–W25",
+     "content": "策略分析、平衡計分卡、OKR/KPI 設計",
+     "hours": 12,
+     "output": "個人 OKR+KPI",
+     "relation": "PMP 商業環境領域",
+     "defer": true
+    },
+    {
+     "no": 6,
+     "name": "供應鏈與營運管理",
+     "id": "MG-06",
+     "weeks": "W27–W30",
+     "content": "需求預測、庫存、產能、半導體設備供應鏈案例",
+     "hours": 12,
+     "output": "案例分析",
+     "relation": "設備產業背景",
+     "defer": true
+    },
+    {
+     "no": 7,
+     "name": "風險管理(ISO 31000/專案風險)",
+     "id": "MG-07",
+     "weeks": "W31–W33",
+     "content": "風險識別/評估/回應、風險登錄表",
+     "hours": 10,
+     "output": "風險登錄表範例",
+     "relation": "PMP 風險管理;碳風險",
+     "defer": false
+    },
+    {
+     "no": 8,
+     "name": "談判與衝突管理/商業溝通",
+     "id": "MG-08",
+     "weeks": "W34–W36",
+     "content": "BATNA、利益談判、跨部門溝通",
+     "hours": 8,
+     "output": "談判模擬紀錄",
+     "relation": "面試/職場",
+     "defer": true
+    },
+    {
+     "no": 9,
+     "name": "技術商品化與科專/政府計畫管理",
+     "id": "MG-09",
+     "weeks": "W37–W39",
+     "content": "計畫書結構、KPI/查核點、經費管理",
+     "hours": 8,
+     "output": "計畫書大綱",
+     "relation": "研究與產學計畫",
+     "defer": true
+    },
+    {
+     "no": 10,
+     "name": "變革管理+永續/ESG 管理",
+     "id": "MG-10",
+     "weeks": "W40–W41",
+     "content": "變革模型、ESG/永續報告、碳管理策略",
+     "hours": 6,
+     "output": "筆記+案例",
+     "relation": "碳淨零、PMP 新版永續議題",
+     "defer": false
+    },
+    {
+     "no": 11,
+     "name": "整合案例報告",
+     "id": "MG-11",
+     "weeks": "W42–W45",
+     "content": "整合 PMP+碳淨零+Omniverse 專案成案例",
+     "hours": 12,
+     "output": "案例報告 10 頁內",
+     "relation": "作品集/面試",
+     "defer": false
+    },
+    {
+     "no": 12,
+     "name": "職涯規劃與面試準備",
+     "id": "MG-12",
+     "weeks": "W46–W48",
+     "content": "目標職務、薪資、面試演練",
+     "hours": 4,
+     "output": "職涯規劃 1 頁",
+     "relation": "求職",
+     "defer": false
+    }
+   ],
+   "extra": [],
+   "w0": 4,
+   "w1": 48
+  },
+  {
+   "slug": "net-zero",
+   "short": "碳淨零",
+   "tag": "碳淨零",
+   "line": {
+    "name": "碳淨零",
+    "goal": "淨零基礎→碳盤查→iPAS 初級→ISO 14064-1→中級",
+    "link": "iPAS 初級 W33;中級 W48(可順延)",
+    "weeks": "W3–W48",
+    "hours": "2/3/4/3",
+    "risk": "梯次日期未公告",
+    "focus": "官網為準;中級可入學後再考",
+    "evidence": "成績單/結業證明",
+    "ids": "CN-01~13",
+    "subs": [
+     {
+      "line": "碳淨零",
+      "sub": "CN-1 淨零基礎",
+      "content": "氣候變遷、2050 路徑、碳費/CBAM、GHG Protocol",
+      "resource": "官方公開資料",
+      "evidence": "筆記",
+      "target": "基礎筆記+備考計畫"
+     },
+     {
+      "line": "碳淨零",
+      "sub": "CN-2 碳盤查實作",
+      "content": "範疇 1/2/3、排放係數、Excel 盤查、初級題庫",
+      "resource": "環境部/GHG Protocol",
+      "evidence": "盤查檔+題庫成績",
+      "target": "Excel 盤查 1 份"
+     },
+     {
+      "line": "碳淨零",
+      "sub": "CN-3 iPAS 初級",
+      "content": "題庫、報名、初級考試",
+      "resource": "iPAS 官網",
+      "evidence": "成績單",
+      "target": "iPAS 初級通過"
+     },
+     {
+      "line": "碳淨零",
+      "sub": "CN-4 查證與中級",
+      "content": "ISO 14064-1 研習、中級備考(含計算題)、中級考試",
+      "resource": "開班機構/iPAS 官網",
+      "evidence": "結業證明/成績單",
+      "target": "研習結業+中級應考"
+     }
+    ],
+    "kpi": {
+     "name": "碳淨零",
+     "weight": 0.1,
+     "gate": "碳盤查 Excel+初級題庫第 1 輪",
+     "close": "iPAS 初級通過;ISO 14064-1 研習;中級視進度",
+     "evidence": "成績單/結業證明"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "氣候變遷/2050 淨零路徑/碳費/CBAM 概覽"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "氣候變遷/2050 淨零路徑/碳費/CBAM 概覽",
+      "GHG Protocol/ISO 14064 概念與名詞"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "GHG Protocol/ISO 14064 概念與名詞",
+      "確認 iPAS 初級資格/梯次並建立備考計畫"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "範疇 1/2/3 與排放係數",
+      "以公司設備或虛擬案例做 Excel 碳盤查"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "以公司設備或虛擬案例做 Excel 碳盤查"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "iPAS 初級題庫(第 1 輪)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "iPAS 初級題庫(第 2 輪)+模擬考",
+      "報名 iPAS 初級(依官網公告梯次)"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "iPAS 初級考試(目標 W33,依官網)",
+      "ISO 14064-1 溫室氣體盤查研習(1~3 天)"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "ISO 14064-1 溫室氣體盤查研習(1~3 天)",
+      "中級備考:節能減碳策略/碳管理(含計算題)"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "中級備考:節能減碳策略/碳管理(含計算題)",
+      "報名 iPAS 中級(依官網)"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "iPAS 中級考試(目標 W48,依官網)"
+     ]
+    }
+   ],
+   "exams": [
+    {
+     "name": "iPAS 淨零碳規劃管理師(初級)",
+     "kind": "經濟部 iPAS",
+     "req": "資格與費用以官網為準",
+     "prep": "W3–W33",
+     "apply": "報名 W28",
+     "week": "33",
+     "start": "2027-05-10",
+     "end": "2027-05-16",
+     "backup": "下一梯次(預估 8 月,W46 附近)",
+     "ids": "CN-01~CN-09",
+     "note": "2026 初級為 5/16、8/15、11/7(供參考)"
+    },
+    {
+     "name": "ISO 14064-1 溫室氣體盤查研習(內部/主任查證員訓練)",
+     "kind": "民間/學校機構開班",
+     "req": "1~3 天,依開班公告",
+     "prep": "W35–W37",
+     "apply": "依開班公告",
+     "week": "36",
+     "start": "2027-05-31",
+     "end": "2027-06-06",
+     "backup": "—",
+     "ids": "CN-10",
+     "note": "例:學校曾開含 ISO 14064-1 查證員訓練+iPAS 實務之研習班;2027 開班需另查"
+    },
+    {
+     "name": "iPAS 淨零碳規劃管理師(中級)",
+     "kind": "經濟部 iPAS",
+     "req": "建議初級通過後再考;資格以官網為準",
+     "prep": "W36–W48",
+     "apply": "報名 W40",
+     "week": "48",
+     "start": "2027-08-23",
+     "end": "2027-08-29",
+     "backup": "可順延至入學後",
+     "ids": "CN-11~CN-13",
+     "note": "2026 中級為 4/11、8/22(供參考);計算題偏多"
+    }
+   ],
+   "tools": [
+    {
+     "area": "碳淨零",
+     "name": "GHG Protocol/ISO 14064-1/ISO 14067",
+     "use": "盤查與查證",
+     "heat": "高",
+     "output": "名詞表/結業證明"
+    },
+    {
+     "area": "碳淨零",
+     "name": "Excel 碳盤查模板+排放係數",
+     "use": "碳盤查實作",
+     "heat": "高",
+     "output": "盤查檔"
+    },
+    {
+     "area": "碳淨零",
+     "name": "碳費/CBAM/ISSB(IFRS S1,S2)概念",
+     "use": "法規與揭露",
+     "heat": "高",
+     "output": "筆記"
+    },
+    {
+     "area": "碳淨零",
+     "name": "iPAS 淨零碳規劃管理師題庫",
+     "use": "考照",
+     "heat": "高",
+     "output": "模擬考成績"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 3,
+   "w1": 48
+  },
+  {
+   "slug": "data-cloud",
+   "short": "資管／資料／雲端",
+   "tag": "資料與雲端",
+   "line": {
+    "name": "資管/資料/雲端",
+    "goal": "SQL/BI→自動化→AI+資管提案書",
+    "link": "職場應用",
+    "weeks": "W1–W39",
+    "hours": "(併入 PMP/管理)",
+    "risk": "與 PMP 重疊",
+    "focus": "只留與 AI/管理相關的部分",
+    "evidence": "小案/提案書",
+    "ids": "IS-01~12",
+    "subs": [
+     {
+      "line": "資管/資料/雲端",
+      "sub": "IS-1 資料庫與 BI",
+      "content": "SQL、Excel/Power BI、UML、Scrum、需求→BI 小案",
+      "resource": "線上課程",
+      "evidence": "小案報告",
+      "target": "小案 1 件"
+     },
+     {
+      "line": "資管/資料/雲端",
+      "sub": "IS-2 企業系統與雲端",
+      "content": "MIS/ERP/ETL、Python 自動化、RPA、AWS 基礎",
+      "resource": "線上課程",
+      "evidence": "專案報告",
+      "target": "自動化報表專案 1 件"
+     },
+     {
+      "line": "資管/資料/雲端",
+      "sub": "IS-3 AI 導入與提案",
+      "content": "AI 專案/ROI、SQL 進階、系統架構、提案書",
+      "resource": "案例研究",
+      "evidence": "提案書+簡報",
+      "target": "AI+資管提案書"
+     }
+    ],
+    "kpi": {
+     "name": "資管/資料/雲端",
+     "weight": 0.05,
+     "gate": "SQL/BI 小案+自動化報表專案",
+     "close": "AI+資管提案書與簡報",
+     "evidence": "提案書"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "資管地圖+ER Model+SQL 基礎(JOIN/聚合/視窗)"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "Excel 進階+Power BI 儀表板",
+      "UML/SDLC/Scrum/Git 協作"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "UML/SDLC/Scrum/Git 協作",
+      "PRD+需求→ER→SQL→BI 小案(P1 驗收)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "MIS/ERP/資料倉儲/ETL 概念",
+      "Python 自動化報表+RPA"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "AWS 雲端基礎(證照選修)",
+      "資料→BI→自動化報表專案(P2 驗收)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "AI 專案生命週期/ROI/資料治理",
+      "SQL 進階/NoSQL/資料工程概念"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "SQL 進階/NoSQL/資料工程概念",
+      "系統架構/技術文件/簡報"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "AI+資管提案書與簡報(P3 驗收)"
+     ]
+    }
+   ],
+   "exams": [
+    {
+     "name": "AWS Cloud Practitioner/AI Practitioner(選修)",
+     "kind": "AWS",
+     "req": "無",
+     "prep": "W23–W25",
+     "apply": "—",
+     "week": "—",
+     "start": "",
+     "end": "",
+     "backup": "時間不足則刪除",
+     "ids": "IS-07",
+     "note": "選修,不計入核心里程碑"
+    }
+   ],
+   "tools": [
+    {
+     "area": "資管",
+     "name": "SQL/PostgreSQL/Power BI/Excel Power Query",
+     "use": "資料與 BI",
+     "heat": "高",
+     "output": "小案"
+    },
+    {
+     "area": "資管",
+     "name": "UML/PRD/Git",
+     "use": "系統分析與協作",
+     "heat": "中",
+     "output": "PRD"
+    },
+    {
+     "area": "資管",
+     "name": "ERP/資料倉儲/RPA/AWS",
+     "use": "企業系統",
+     "heat": "中",
+     "output": "自動化報表"
+    }
+   ],
+   "courses": [],
+   "extra": [
+    "2026/11 到 2027/09 自學，從零開始，目標把資料庫、資料處理和程式工具學到熟練",
+    "教材以中文、開放課程和免費資源優先",
+    "證照放在研究所入學後再考：CCNA、CCNP ENCOR，雲端 AWS、Azure、GCP 三家都要碰"
+   ],
+   "w0": 1,
+   "w1": 39
+  },
+  {
+   "slug": "english",
+   "short": "英文",
+   "tag": "英文",
+   "line": {
+    "name": "英文",
+    "goal": "多益 700→800→880→實考 900,口說 15 分鐘",
+    "link": "多益 W43(7 月)",
+    "weeks": "W1–W49",
+    "hours": "9/5/5/10",
+    "risk": "口說量不足",
+    "focus": "每日聽力+每週 2 次口說",
+    "evidence": "成績單/錄音",
+    "ids": "EN-01~17",
+    "subs": [
+     {
+      "line": "英文(多益900+口說)",
+      "sub": "EN-1 多益基礎",
+      "content": "基準模測、聽力/文法/閱讀、口說起步",
+      "resource": "ETS 官方題本",
+      "evidence": "成績紀錄",
+      "target": "全真模測≥700"
+     },
+     {
+      "line": "英文(多益900+口說)",
+      "sub": "EN-2 多益進階",
+      "content": "閱讀速度、聽力進階、學術單字、技術簡報",
+      "resource": "官方題本",
+      "evidence": "成績紀錄",
+      "target": "全真模測≥800"
+     },
+     {
+      "line": "英文(多益900+口說)",
+      "sub": "EN-3 多益精練",
+      "content": "技術英文、模擬面試口說、弱項、雙模測",
+      "resource": "官方題本",
+      "evidence": "成績紀錄",
+      "target": "全真模測≥880"
+     },
+     {
+      "line": "英文(多益900+口說)",
+      "sub": "EN-4 實考與口說",
+      "content": "模測衝刺、7 月實考、補考規劃、學術/面試英文",
+      "resource": "TOEIC 官網",
+      "evidence": "成績單+錄音",
+      "target": "多益≥900;自由對話 15 分鐘"
+     }
+    ],
+    "kpi": {
+     "name": "英文(多益900+口說)",
+     "weight": 0.12,
+     "gate": "多益模測≥800",
+     "close": "多益≥900+自由對話 15 分鐘",
+     "evidence": "成績單/錄音"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "多益基準模測+建立單字本",
+      "聽力 Part1-4+文法 Part5-6"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "聽力 Part1-4+文法 Part5-6",
+      "閱讀 Part7+口說 1 對 1(每週 2 次)"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "閱讀 Part7+口說 1 對 1(每週 2 次)",
+      "全真模測(目標≥700)"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "閱讀速度+聽力進階題型"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "閱讀速度+聽力進階題型",
+      "全真模測(目標≥750)",
+      "學術單字+口說技術簡報"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "學術單字+口說技術簡報",
+      "全真模測(目標≥800)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "技術英文閱讀+模擬面試口說"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "技術英文閱讀+模擬面試口說",
+      "全真模測(目標≥840)",
+      "弱項專攻+聽力/閱讀雙模測"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "弱項專攻+聽力/閱讀雙模測",
+      "全真模測(≥870~880)+報名 7 月實考"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "每週 2 回模測+錯題複盤",
+      "多益實考(7 月場次,依官網)",
+      "實考檢討/補考規劃"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "學術英文+面試英文+自由對話 15 分鐘"
+     ]
+    },
+    {
+     "month": "2027/09",
+     "phase": "P4",
+     "items": [
+      "緩衝:每日 30 分鐘聽說維持"
+     ]
+    }
+   ],
+   "exams": [
+    {
+     "name": "多益 TOEIC(目標≥900)",
+     "kind": "ETS",
+     "req": "無",
+     "prep": "W1–W43",
+     "apply": "報名 W39",
+     "week": "43",
+     "start": "2027-07-19",
+     "end": "2027-07-25",
+     "backup": "W47 補考",
+     "ids": "EN-01~EN-17",
+     "note": "考期以官網為準"
+    }
+   ],
+   "tools": [
+    {
+     "area": "英文",
+     "name": "多益(LC+RC)",
+     "use": "900 分",
+     "heat": "高",
+     "output": "模測紀錄"
+    },
+    {
+     "area": "英文",
+     "name": "影子跟讀/Anki/口說 1 對 1",
+     "use": "聽說",
+     "heat": "高",
+     "output": "錄音"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 49
+  },
+  {
+   "slug": "japanese",
+   "short": "日文",
+   "tag": "日文",
+   "months": [],
+   "exams": [],
+   "tools": [],
+   "courses": [],
+   "line": {
+    "name": "日文",
+    "goal": "從零開始，目標 JLPT N1",
+    "link": "JLPT N1（2027 年 7 月場次）",
+    "weeks": "2026/11–2027/06",
+    "hours": "平日每天 2～3 小時以上",
+    "risk": "從零到 N1 時間很緊，進度要每月檢查",
+    "focus": "只用免費的網站和影片，不用 App、不買付費教材",
+    "evidence": "JLPT 成績單",
+    "ids": "",
+    "subs": [],
+    "kpi": null
+   },
+   "extra": [
+    "2026 年 11 月開始，零基礎起步",
+    "2027 年 7 月考 JLPT N1",
+    "每天平日投入 2～3 小時以上",
+    "學習資源只用免費的網站和影片"
+   ],
+   "w0": 6,
+   "w1": 40
+  },
+  {
+   "slug": "thesis",
+   "short": "論文",
+   "tag": "論文",
+   "line": {
+    "name": "論文 A/B",
+    "goal": "A:W1–W26;B:W23–W48(各 6 個月)",
+    "link": "投稿或 arXiv",
+    "weeks": "W1–W48",
+    "hours": "6/8/8/12",
+    "risk": "指導者方向未定",
+    "focus": "先定題再做實驗",
+    "evidence": "全文/投稿證明",
+    "ids": "TH-01~24",
+    "subs": [
+     {
+      "line": "論文 A/B",
+      "sub": "TH-1 論文A 前期",
+      "content": "選題、文獻、研究問題、baseline、方法 v1",
+      "resource": "指導者",
+      "evidence": "文獻矩陣+baseline 結果",
+      "target": "初步實驗完成"
+     },
+     {
+      "line": "論文 A/B",
+      "sub": "TH-2 論文A 實驗與寫作",
+      "content": "實驗/消融/SOTA、圖表、撰寫、潤稿、投稿",
+      "resource": "指導者",
+      "evidence": "全文+投稿證明",
+      "target": "論文A 投稿或 arXiv"
+     },
+     {
+      "line": "論文 A/B",
+      "sub": "TH-3 論文B 前期與實驗",
+      "content": "選題、文獻、baseline、方法、實驗、初稿",
+      "resource": "指導者",
+      "evidence": "初稿+實驗結果",
+      "target": "論文B 初稿"
+     },
+     {
+      "line": "論文 A/B",
+      "sub": "TH-4 論文B 收尾",
+      "content": "審閱、補實驗、修訂、投稿、開源、定稿",
+      "resource": "指導者",
+      "evidence": "全文+投稿證明",
+      "target": "論文B 定稿"
+     }
+    ],
+    "kpi": {
+     "name": "論文 A/B",
+     "weight": 0.14,
+     "gate": "論文A 投稿或 arXiv",
+     "close": "論文B 定稿+研究計畫",
+     "evidence": "全文/投稿證明"
+    }
+   },
+   "months": [
+    {
+     "month": "2026/10",
+     "phase": "P1",
+     "items": [
+      "確定領域(建議:Omniverse 合成資料+AI 偵測)與指導者討論",
+      "文獻檢索(Scholar/IEEE/arXiv)+Zotero 建庫",
+      "文獻 20 篇與 research gap",
+      "定題目/研究問題/貢獻點"
+     ]
+    },
+    {
+     "month": "2026/11",
+     "phase": "P1",
+     "items": [
+      "方法/資料集/評估指標設計",
+      "建立 baseline 環境與復現"
+     ]
+    },
+    {
+     "month": "2026/12",
+     "phase": "P1",
+     "items": [
+      "建立 baseline 環境與復現",
+      "方法 v1 設計實作+初步實驗"
+     ]
+    },
+    {
+     "month": "2027/01",
+     "phase": "P2",
+     "items": [
+      "實驗 1~3(主要比較/參數/v2)",
+      "消融實驗+SOTA 比較"
+     ]
+    },
+    {
+     "month": "2027/02",
+     "phase": "P2",
+     "items": [
+      "消融實驗+SOTA 比較",
+      "結果分析/圖表+撰寫 Method/Results"
+     ]
+    },
+    {
+     "month": "2027/03",
+     "phase": "P2",
+     "items": [
+      "撰寫 Intro/Related Work/Conclusion+全文初稿",
+      "修訂 v2+英文潤稿",
+      "論文A 定稿投稿/上傳 arXiv",
+      "論文B 題目探索+文獻+定題(建議:DSP+AI/邊緣 AI)"
+     ]
+    },
+    {
+     "month": "2027/04",
+     "phase": "P3",
+     "items": [
+      "論文B baseline 環境與復現",
+      "論文B 方法 v1+實驗 1~2"
+     ]
+    },
+    {
+     "month": "2027/05",
+     "phase": "P3",
+     "items": [
+      "論文B 方法 v2+實驗 3+消融+SOTA 比較",
+      "論文B 結果圖表+撰寫 Method/Results"
+     ]
+    },
+    {
+     "month": "2027/06",
+     "phase": "P3",
+     "items": [
+      "論文B 結果圖表+撰寫 Method/Results",
+      "論文B Intro/Related Work+全文初稿"
+     ]
+    },
+    {
+     "month": "2027/07",
+     "phase": "P4",
+     "items": [
+      "論文B 指導者/同儕審閱+補實驗",
+      "論文B 修訂 v2+英文潤稿",
+      "論文B 投稿檢核與投稿"
+     ]
+    },
+    {
+     "month": "2027/08",
+     "phase": "P4",
+     "items": [
+      "論文B 投稿檢核與投稿",
+      "論文B 回覆審稿/程式與資料集開源",
+      "論文B 定稿+整理成研究所研究計畫"
+     ]
+    }
+   ],
+   "exams": [],
+   "tools": [
+    {
+     "area": "研究",
+     "name": "Zotero/arXiv/Google Scholar/Overleaf",
+     "use": "文獻與寫作",
+     "heat": "高",
+     "output": "論文A/B"
+    }
+   ],
+   "courses": [],
+   "extra": [],
+   "w0": 1,
+   "w1": 48
+  }
+ ],
+ "events": [
+  {
+   "start": "2026-09-28",
+   "end": "2026-10-04",
+   "week": 1,
+   "text": "啟動:環境建置、多益基準模測、PMP 資格確認、論文領域確認",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2026-12-21",
+   "end": "2026-12-27",
+   "week": 13,
+   "text": "P1 Gate:ML 小專案、LTspice 報告、Omniverse 小場景、資管小案、多益≥700",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-02-22",
+   "end": "2027-02-28",
+   "week": 22,
+   "text": "PMP 35 小時課程完成並取得證明",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-03-08",
+   "end": "2027-03-14",
+   "week": 24,
+   "text": "PMP 申請送出;論文A 全文初稿",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-03-22",
+   "end": "2027-03-28",
+   "week": 26,
+   "text": "P2 Gate:論文A 投稿、DL 專題、PCB v1、多益≥800;決策點:依當年課表定案 AI/電機比重",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-04-26",
+   "end": "2027-05-02",
+   "week": 31,
+   "text": "PMP(專案管理專業人員)",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-05-10",
+   "end": "2027-05-16",
+   "week": 33,
+   "text": "iPAS 淨零碳規劃管理師(初級)",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-05-31",
+   "end": "2027-06-06",
+   "week": 36,
+   "text": "ISO 14064-1 溫室氣體盤查研習(內部/主任查證員訓練)",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-06-21",
+   "end": "2027-06-27",
+   "week": 39,
+   "text": "P3 Gate:端到端 AI 服務、PCB v2、Omniverse 作品集、提案書、多益≥880",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-07-04",
+   "end": "2027-07-04",
+   "week": 41,
+   "text": "JLPT N1（7 月第一個週日，依官方公告）",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-07-19",
+   "end": "2027-07-25",
+   "week": 43,
+   "text": "多益 TOEIC(目標≥900)",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-08-23",
+   "end": "2027-08-29",
+   "week": 48,
+   "text": "論文B 定稿;iPAS 中級(可順延)",
+   "kind": "里程碑"
+  },
+  {
+   "start": "2027-08-23",
+   "end": "2027-08-29",
+   "week": 48,
+   "text": "iPAS 淨零碳規劃管理師(中級)",
+   "kind": "考試"
+  },
+  {
+   "start": "2027-08-30",
+   "end": "2027-09-05",
+   "week": 49,
+   "text": "入學準備清單完成",
+   "kind": "里程碑"
+  }
+ ]
+}

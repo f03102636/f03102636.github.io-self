@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: 旅遊
+roomPage: hall
+permalink: /travel/
+---
+{%- set key = "hall" %}{% include "room-head.njk" %}
+{%- set list = collections.travel | reverse %}
+<section class="block">
+  {%- if list.length %}
+  <ul class="tickets">
+    {%- for post in list %}
+    {%- set d = post.data %}
+    <li class="ticket">
+      <a href="{{ post.url }}">
+        <span class="ticket-main">
+          <span class="ticket-label">目的地</span>
+          <span class="ticket-dest">{{ d.place or d.title }}</span>
+          <span class="ticket-title">{{ d.title }}</span>
+        </span>
+        <span class="ticket-stub">
+          <span class="ticket-label">出發</span>
+          <span class="ticket-date">{{ post.date | dateDot }}</span>
+          {%- if d.days %}<span class="ticket-label">天數</span><span class="ticket-days">{{ d.days }} 天</span>{% endif %}
+          {%- if d.locked %}<span class="card-lock" aria-label="需要密碼"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>{% endif %}
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <div class="empty-room">
+    <p class="empty-big">行李箱還沒打開。</p>
+    <p>在 GitHub 的 <code>travel</code> 資料夾新增一篇 .md，用 <code>templates/旅遊範本.md</code> 開頭，這裡就會多一張登機證。</p>
+  </div>
+  {%- endif %}
+</section>

@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+{%- set key = roomPage %}{% include "room-head.njk" %}
+<article class="paper">
+  {%- if roomPage == "living" %}
+  <div class="about-card">
+    {%- if site.avatar %}
+    <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}的照片" width="160" height="160">
+    {%- else %}
+    <span class="avatar avatar-art" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#sprout-3"/></svg></span>
+    {%- endif %}
+    <p class="about-name">{{ site.author }}</p>
+  </div>
+  {%- endif %}
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

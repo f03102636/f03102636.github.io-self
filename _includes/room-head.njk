@@ -1,0 +1,10 @@
+{#- 房間頁的標頭：需要變數 key -#}
+{%- set r = rooms[key] %}
+<header class="room-head" data-room="{{ key }}">
+  <div class="room-head-text">
+    <p class="room-head-kicker">{{ r.name }}</p>
+    <h1 class="room-head-title">{{ r.label }}</h1>
+    <p class="room-head-desc">{{ headDesc or r.desc }}</p>
+  </div>
+  <div class="room-head-art">{% set art = key %}{% include "room-art.njk" %}</div>
+</header>

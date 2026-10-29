@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+roomPage: study
+title: 學習
+description: 菜菜正在學的所有科目，以及一年學習計畫。
+permalink: /learn/
+---
+<article class="plan">
+  <h1 class="page-title">學習</h1>
+  <p class="page-sub">一年內要走完的十個科目。點進去可以看目標、細項、每月安排和筆記。</p>
+
+  <ul class="subject-grid">
+    {%- for s in plan.subjects %}
+    {%- set n = (collections.posts | withTag(s.tag)).length %}
+    <li>
+      <a href="/learn/{{ s.slug }}/">
+        <span class="sg-name">{{ s.short }}</span>
+        <span class="sg-goal">{{ s.line.goal }}</span>
+        <span class="sg-meta">{{ s.line.weeks }}{% if n %}　{{ n }} 篇筆記{% endif %}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <h2>計畫</h2>
+  <nav class="plan-more" aria-label="計畫">
+    <a href="/plan/"><strong>學習計畫總覽</strong><span>四個階段、里程碑和取捨規則</span></a>
+    <a href="/plan/monthly/"><strong>每月進度</strong><span>12 個月、每條主線要做的事</span></a>
+    <a href="/exams/"><strong>考試時程</strong><span>PMP、iPAS、多益的目標週</span></a>
+    <a href="/toolbox/"><strong>工具箱</strong><span>這一年會用到的軟體和知識</span></a>
+  </nav>
+</article>

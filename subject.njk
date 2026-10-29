@@ -1,0 +1,133 @@
+---
+layout: layouts/base.njk
+roomPage: study
+pagination:
+  data: plan.subjects
+  size: 1
+  alias: subject
+  addAllPagesToCollections: false
+eleventyComputed:
+  title: "{{ subject.short }}"
+  description: "菜菜的{{ subject.short }}學習計畫：目標、進度安排和筆記。"
+permalink: "/learn/{{ subject.slug }}/"
+locked: true
+---
+{%- set L = subject.line %}
+{%- set notes = collections.posts | withTag(subject.tag) | reverse %}
+<article class="plan subject" data-plan data-start="{{ plan.start }}" data-entry="{{ plan.entry }}">
+  <p class="crumb"><a href="/learn/">學習</a> ／ 科目</p>
+  <h1 class="page-title">{{ subject.short }}</h1>
+  <p class="subject-goal">{{ L.goal }}</p>
+
+  <dl class="facts">
+    <div><dt>期間</dt><dd>{{ L.weeks }}</dd></div>
+    <div><dt>每週時數</dt><dd>{{ L.hours | replace("(", "") | replace(")", "") }}{% if "/" in L.hours and not "併入" in L.hours and not "同上" in L.hours %}<small>小時（P1／P2／P3／P4）</small>{% endif %}</dd></div>
+    <div><dt>銜接</dt><dd>{{ L.link }}</dd></div>
+  </dl>
+
+  <nav class="jump" aria-label="本頁目錄">
+    {%- if subject.extra.length %}<a href="#about">說明</a>{% endif %}
+    {%- if L.kpi %}<a href="#goals">目標</a>{% endif %}
+    {%- if L.subs.length %}<a href="#items">細項</a>{% endif %}
+    {%- if subject.months.length %}<a href="#months">每月安排</a>{% endif %}
+    {%- if subject.exams.length %}<a href="#exams">考試</a>{% endif %}
+    {%- if subject.courses.length %}<a href="#courses">課程</a>{% endif %}
+    {%- if subject.tools.length %}<a href="#tools">工具</a>{% endif %}
+    <a href="#notes">筆記</a>
+  </nav>
+
+  {%- if subject.extra.length %}
+  <section id="about">
+    <h2>說明</h2>
+    <ul class="dots">{% for x in subject.extra %}<li>{{ x }}</li>{% endfor %}</ul>
+  </section>
+  {%- endif %}
+
+  <section id="goals">
+    <h2>目標與做法</h2>
+    <dl class="kv">
+      {%- if L.kpi %}
+      <div><dt>W26 檢查</dt><dd>{{ L.kpi.gate }}</dd></div>
+      <div><dt>年度目標</dt><dd>{{ L.kpi.close }}</dd></div>
+      {%- endif %}
+      <div><dt>重點</dt><dd>{{ L.focus }}</dd></div>
+      <div><dt>風險</dt><dd>{{ L.risk }}</dd></div>
+      <div><dt>證據</dt><dd>{{ L.evidence }}</dd></div>
+    </dl>
+  </section>
+
+  {%- if L.subs.length %}
+  <section id="items">
+    <h2>細項</h2>
+    <ol class="subs">
+      {%- for sub in L.subs %}
+      <li>
+        <p class="sub-name">{{ sub.sub }}</p>
+        <p class="sub-content">{{ sub.content }}</p>
+        <p class="sub-meta">資源：{{ sub.resource }}　產出：{{ sub.evidence }}</p>
+        <p class="sub-target">驗收：{{ sub.target }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if subject.months.length %}
+  <section id="months">
+    <h2>每月安排</h2>
+    <ol class="sm-list">
+      {%- for m in subject.months %}
+      <li data-month-row="{{ m.month }}">
+        <p class="sm-month">{{ m.month }}<span class="phase-id tl-{{ m.phase | lower }}">{{ m.phase }}</span></p>
+        <ul>{% for it in m.items %}<li>{{ it }}</li>{% endfor %}</ul>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if subject.exams.length %}
+  <section id="exams">
+    <h2>考試</h2>
+    <ul class="mini-exams">
+      {%- for e in subject.exams %}
+      <li {% if e.start %}data-ms-start="{{ e.start }}" data-ms-end="{{ e.end }}"{% endif %}>
+        <strong>{{ e.name }}</strong>
+        <span class="muted">{% if e.start %}目標 W{{ e.week }}（{{ e.start | ymd }} 那週）{% else %}{{ e.note }}{% endif %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="section-note"><a href="/exams/">看完整考試時程</a></p>
+  </section>
+  {%- endif %}
+
+  {%- if subject.courses.length %}
+  <section id="courses">
+    <h2>課程</h2>
+    <ol class="dots">
+      {%- for c in subject.courses %}<li><strong>{{ c.name }}</strong>（{{ c.weeks }}，{{ c.hours }} 小時）{% if c.defer %}<span class="badge">可延後</span>{% endif %}<br><span class="muted">{{ c.content }}</span></li>{% endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if subject.tools.length %}
+  <section id="tools">
+    <h2>工具</h2>
+    <ul class="tools">
+      {%- for t in subject.tools %}
+      <li><p class="tool-name">{{ t.name }}<span class="heat heat-{{ t.heat }}">{{ t.heat }}</span></p><p class="tool-use">{{ t.use }}</p></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <section id="notes">
+    <h2>相關筆記</h2>
+    {%- if notes.length %}
+    {%- set listPosts = notes %}
+    {% include "post-list.njk" %}
+    {%- else %}
+    <p class="empty-note">還沒有這個科目的筆記。寫文章時在 tags 加上「{{ subject.tag }}」，就會出現在這裡。</p>
+    {%- endif %}
+  </section>
+</article>
